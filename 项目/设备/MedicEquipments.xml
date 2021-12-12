@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Items>
-  <Item name="半自然溶剂" identifier="SeminaturalSolvent" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light" useinhealthinterface="true">
+  <Item name="半自然溶剂" identifier="EA_SeminaturalSolvent" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light" useinhealthinterface="true">
 
     <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
     <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.01"/>
@@ -67,7 +67,7 @@
     
   </Item>
 
-  <Item name="活性制剂" identifier="ActiveAgent" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light" useinhealthinterface="true">
+  <Item name="活性制剂" identifier="EA_ActiveAgent" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light" useinhealthinterface="true">
 
     <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
     <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="3" spawnprobability="0.06"/>
@@ -135,7 +135,7 @@
   </Item>
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <Item name="源石抵抗合剂" identifier="OripathyResistanceFlask" category="Material" maxstacksize="8" Tags="smallitem,OripathyMedicine" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light" useinhealthinterface="true">
+  <Item name="源石抵抗合剂" identifier="EA_OripathyResistanceFlask" category="Material" maxstacksize="8" Tags="smallitem,OripathyMedicine" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light" useinhealthinterface="true">
 
     <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="0.06"/>
     <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="2" spawnprobability="0.06"/>
@@ -198,7 +198,7 @@
     </Holdable>
   </Item>
 
-  <Item name="理智合剂" identifier="SanityFlask" category="Material" maxstacksize="8" Tags="smallitem,OripathyMedicine" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light" useinhealthinterface="true">
+  <Item name="理智合剂" identifier="EA_SanityFlask" category="Material" maxstacksize="8" Tags="smallitem,OripathyMedicine" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light" useinhealthinterface="true">
 
     <Price baseprice="250" soldeverywhere="false">
       <Price locationtype="research" multiplier="1" sold="true"/>
@@ -253,7 +253,7 @@
     </Holdable>
   </Item>
 
-  <Item name="源石解析液" identifier="OriginiumAnalysisFluid" category="Material" maxstacksize="8" Tags="smallitem,OripathyMedicine" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light" useinhealthinterface="true">
+  <Item name="源石解析液" identifier="EA_OriginiumAnalysisFluid" category="Material" maxstacksize="8" Tags="smallitem,OripathyMedicine" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light" useinhealthinterface="true">
 
     <Fabricate suitablefabricators="medicalfabricator" requiredtime="15" requiresrecipe="true" >
       <RequiredSkill identifier="medic" level="75" />
