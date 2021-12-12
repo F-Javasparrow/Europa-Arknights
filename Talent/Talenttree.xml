@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TalentTrees>
+  <TalentTree jobidentifier="OripathyScholar">
+    <SubTree identifier="xenologist">
+      <TalentOptions>
+        <TalentOption identifier="researchersintuition"/>
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="curiosity"/>
+        <TalentOption identifier="doubleduty"/>
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="alienhoarder"/>
+        <TalentOption identifier="reverseengineer"/>
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="atmosmachine"/>
+      </TalentOptions>
+    </SubTree>
+
+    <SubTree identifier="scientist">
+      <TalentOptions>
+        <TalentOption identifier="drsubmarine"/>
+        <TalentOption identifier="genetherapist"/>
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="researchgrant"/>
+        <TalentOption identifier="researchanddevelopment"/>
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="geneharvester"/>
+        <TalentOption identifier="geneticstability"/>
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="advancedsplicing"/>
+      </TalentOptions>
+    </SubTree>
+
+    <SubTree identifier="DiseaseScholar">
+      <TalentOptions>
+        <TalentOption identifier="EndocrineSuppression"/>
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="PalliativeCare"/>
+        <TalentOption identifier="ActiveTreatment"/>
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="DustfreeWard"/>
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="IntoOne"/>
+        <TalentOption identifier="ResistanceTherapy"/>
+      </TalentOptions>
+    </SubTree>
+  </TalentTree>
+
+  <TalentTree jobidentifier="AbyssalHunter">
+    <SubTree identifier="specialist">
+      <TalentOptions>
+        <TalentOption identifier="firstaidtraining"/>
+        <TalentOption identifier="physicalconditioning"/>
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="navydiver"/>
+        <TalentOption identifier="scavenger"/>
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="buccaneer"/>
+        <TalentOption identifier="deepseaslayer"/>
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="dualspecops"/>
+      </TalentOptions>
+    </SubTree>
+
+    <SubTree identifier="soldier">
+      <TalentOptions>
+        <TalentOption identifier="bootcamp"/>
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="warriorpoet"/>
+        <TalentOption identifier="gunsmith"/>
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="commando"/>
+        <TalentOption identifier="tandemfire"/>
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="warlord"/>
+      </TalentOptions>
+    </SubTree>
+
+    <SubTree identifier="TheHunter">
+      <TalentOptions>
+        <TalentOption identifier="DiveIntoTheDeepSea"/>
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="BloodTies"/>
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="BloodOfTheDeep"/>
+        <TalentOption identifier="TimeOfRebirth"/>
+      </TalentOptions>
+      <TalentOptions>
+        <TalentOption identifier="Hunters"/>
+      </TalentOptions>
+    </SubTree>
+  </TalentTree>
+</TalentTrees>

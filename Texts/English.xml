@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="English" nowhitespace="false" translatedname="English">
+
+<!-- 阵营 faction -->
+  <faction.ReunionMovement>Reunion Movement</faction.ReunionMovement>
+  <faction.ReunionMovement.description>The Reunion Movement used to be just an inaction underground organization whose members were all infected, had a strong sense of revenge towards ordinary people, and eager to overthrow the existing social structure dominated by ordinary people. A few years ago, the integration movement ushered in a new leader, and the new ideas that followed, and then began to quietly gather infected people from all over the world, brewing a terrible subversion plan. Today, the integration movement has become the largest organization of infected persons in history.</faction.ReunionMovement.description>
+  <faction.ReunionMovement.shortdescription>They tried to integrate with the Originiums and bring a new order to the earth.</faction.ReunionMovement.shortdescription>
+
+<!-- 职业 jobs-->
+  <!-- 职业: OripathyScholar-->
+  <jobname.OripathyScholar>Oripathy Scholar</jobname.OripathyScholar>
+  <jobdescription.OripathyScholar>Oripathy Scholar</jobdescription.OripathyScholar>
+  <talenttree.DiseaseScholar>Oripathy Scholar</talenttree.DiseaseScholar>
+  <talentname.EndocrineSuppression>Endocrine Suppression</talentname.EndocrineSuppression>
+  <talentdescription.EndocrineSuppression>The character you manipulate will automatically restore health, but your swimming speed is reduced by [swimspeedvalue]%.</talentdescription.EndocrineSuppression>
+  <talentname.PalliativeCare>Palliative Care</talentname.PalliativeCare>
+  <talentdescription.PalliativeCare>When the character you manipulate is infected with Oripathy, you will gain [experienvalue] points every [time] seconds.</talentdescription.PalliativeCare>
+  <talentname.ActiveTreatment>Active Treatment</talentname.ActiveTreatment>
+  <talentdescription.ActiveTreatment>The manipulated character gains [OripathyReduction]% Oripathy Resistance and [ResistanceDrugWithdrawalReduction]% Resistance Drug Withdrawal Reduction.</talentdescription.ActiveTreatment>
+  <talentname.DustfreeWard>Dust-free Ward</talentname.DustfreeWard>
+  <talentdescription.DustfreeWard>Unlock recipe：[itemname].</talentdescription.DustfreeWard>
+  <talentname.IntoOne>Into One</talentname.IntoOne>
+  <talentdescription.IntoOne>The Oripathy of the character you manipulate will not get worse.</talentdescription.IntoOne>
+  <talentname.ResistanceTherapy>Resistance Therapy</talentname.ResistanceTherapy>
+  <talentdescription.ResistanceTherapy>Unlock recipe：[itemname].\nGain [amount]% [stattype] resistance.</talentdescription.ResistanceTherapy>
+
+<!-- 职业: AbyssalHunter-->
+  <jobname.EA_AbyssalHunter>AbyssalHunter</jobname.EA_AbyssalHunter>
+  <talenttree.EA_TheHunter>AbyssalHunter</talenttree.EA_TheHunter>
+  <talentname.EA_DiveIntoTheDeepSea>Dive Into The Deep Sea</talentname.EA_DiveIntoTheDeepSea>
+  <talentdescription.EA_DiveIntoTheDeepSea>Your swimming speed is increased by [swimspeedvalue]%.</talentdescription.EA_DiveIntoTheDeepSea>
+  <talentname.EA_BloodTies>Blood Ties</talentname.EA_BloodTies>
+  <talentdescription.EA_BloodTies>Unlock recipe：[itemname2].\nGain [amount]% [stattype] resistance.</talentdescription.EA_BloodTies>
+  <talentname.EA_BloodOfTheDeep>Blood Of The Abyss</talentname.EA_BloodOfTheDeep>
+  <talentdescription.EA_BloodOfTheDeep>The character you manipulate will automatically restore health.\nBut you will get Psychiat</talentdescription.EA_BloodOfTheDeep>
+  <talentname.EA_TimeOfRebirth>Time Of Rebirth</talentname.EA_TimeOfRebirth>
+  <talentdescription.EA_TimeOfRebirth>Ignore Oripathy</talentdescription.EA_TimeOfRebirth>
+  <talentname.EA_Hunters>AbyssalHunters</talentname.EA_Hunters>
+  <talentdescription.EA_Hunters>Unlock recipe：[itemname].\nGain [amount]% damage resistance.</talentdescription.EA_Hunters>
+
+<!-- 怪物 monster -->
+  <character.infected_001>Infected Insect α</character.infected_001>
+  <character.infected_002>Infected Insect β</character.infected_002>
+  <character.infected_003>Pompeii</character.infected_003>
+  <character.infected_004>Explosive Infected Insect α</character.infected_004>
+  <character.infected_005>Infecting Mutants</character.infected_005>
+  <character.infected_006>Floater</character.infected_006>
+
+<!-- BUFFs -->
+  <afflictionname.EA_Oripathy>Oripathy</afflictionname.EA_Oripathy>
+  <afflictionname.EA_OripathyResistance>Oripathy Resistance</afflictionname.EA_OripathyResistance>
+  <afflictionname.EA_ResistanceDrugAddiction>Resistance-Drug Addiction</afflictionname.EA_ResistanceDrugAddiction>
+  <afflictionname.EA_ResistanceDrugWithdrawal>Resistance-Drug Withdrawal</afflictionname.EA_ResistanceDrugWithdrawal>
+
+<!-- 物品 -->
+  <!-- 武器 -->
+  <entityname.EA_AbyssalHunterGreatSword>Abyssal Hunter GreatSword</entityname.EA_AbyssalHunterGreatSword>
+  <entitydescription.EA_AbyssalHunterGreatSword>A great sword used by a deep sea hunter, which will be covered with the blood of the sea heir</entitydescription.EA_AbyssalHunterGreatSword>
+  <entityname.EA_ShadowSword>Shadow Sword</entityname.EA_ShadowSword>
+  <entitydescription.EA_ShadowSword>A long sword composed of high-concentration Originium dust and unknown substances</entitydescription.EA_ShadowSword>
+  <entityname.EA_Surtr>Surtr</entityname.EA_Surtr>
+  <entitydescription.EA_Surtr>A long sword named after the legendary Balrog</entitydescription.EA_Surtr>
+  <!-- 装备 -->
+  <entityname.EA_IsolationProtectiveMask>Isolation Protective Mask</entityname.EA_IsolationProtectiveMask>
+  <entityname.EA_AbyssalHunterHat>Abyssal Hunter Hat</entityname.EA_AbyssalHunterHat>
+  <!-- 装备 -->
+  <entityname.EA_OriginiumMagazine>Originium Magazine</entityname.EA_OriginiumMagazine>
+  <entityname.EA_LiquidOriginiumTank>Liquid Originium Tank</entityname.EA_LiquidOriginiumTank>
+  <!-- 材料 -->
+  <entityname.EA_Originiums>Originiums</entityname.EA_Originiums>
+  <entityname.EA_OriginiumsOre>Originiums Ore</entityname.EA_OriginiumsOre>
+  <entityname.EA_OriginiumRock>Originium Rock</entityname.EA_OriginiumRock>
+  <entityname.EA_DissimilarIron>Dissimilar Iron</entityname.EA_DissimilarIron>
+  <entityname.EA_KetoneAgglutination>Ketone Agglutination</entityname.EA_KetoneAgglutination>
+  <entityname.EA_KetonePlant>Ketone Plant</entityname.EA_KetonePlant>
+  <entityname.EA_OriginiumInfectsBlood>Originium Infects Blood</entityname.EA_OriginiumInfectsBlood>
+  <entityname.EA_OriginiumInfectsBloodsample>Originium Infects Bloodsample</entityname.EA_OriginiumInfectsBloodsample>
+  <entityname.EA_InfectedTissueSample>InfectedTissue Sample</entityname.EA_InfectedTissueSample>
+  <entityname.EA_D32>D32</entityname.EA_D32>
+  <entityname.EA_CarbonBlock>Carbon Block</entityname.EA_CarbonBlock>
+  <entityname.EA_SeminaturalSolvent>Seminatural Solvent</entityname.EA_SeminaturalSolvent>
+  <entityname.EA_ActiveAgent>Active Agent</entityname.EA_ActiveAgent>
+  <entityname.EA_OripathyResistanceFlask>Oripathy Resistance Flask</entityname.EA_OripathyResistanceFlask>
+  <entityname.EA_SanityFlask>Sanity Flask</entityname.EA_SanityFlask>
+  <entityname.EA_OriginiumAnalysisFluid>Originium Analysis Fluid</entityname.EA_OriginiumAnalysisFluid>
+</infotexts>

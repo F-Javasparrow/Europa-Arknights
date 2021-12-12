@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Talents>
+  <Talent identifier="DiveIntoTheDeepSea">
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="2,4" sheetelementsize="128,128"/>
+    <Description tag="talentdescription.DiveIntoTheDeepSea">
+      <Replace tag="[swimspeedvalue]" value="20" color="gui.green"/>
+    </Description>
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityGiveStat stattype="SwimmingSpeed" value="0.2"/>
+      </Abilities>
+    </AbilityGroupEffect>
+  </Talent>
+
+  <Talent identifier="BloodTies">
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="3,6" sheetelementsize="128,128"/>
+    <Description tag="talentdescription.BloodTies">
+      <!--<Replace tag="[itemname1]" value="深海猎人大衣" color="gui.orange"/>-->
+      <Replace tag="[itemname2]" value="深海猎人宽沿帽" color="gui.orange"/>
+      <Replace tag="[amount]" value="30" color="gui.green"/>
+      <Replace tag="[stattype]" value="伤害" color="gui.green"/>
+    </Description>
+    <AbilityGroupEffect abilityeffecttype="None">
+      <Abilities>
+        <CharacterAbilityModifyResistance resistanceid="damage" resistance="0.30"/>
+      </Abilities>
+    </AbilityGroupEffect>
+    <!--<AddedRecipe itemidentifier="AbyssalHunterOvercoat"/>-->
+    <AddedRecipe itemidentifier="AbyssalHunterHat"/>
+  </Talent>
+
+  <Talent identifier="BloodOfTheDeep">
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="4,4" sheetelementsize="128,128"/>
+    <Description tag="talentdescription.BloodOfTheDeep" />
+    <AbilityGroupInterval interval="1">
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects> 
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+              <Affliction identifier="BloodOfTheDeep_Affliction" amount="100"/>
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupInterval>
+  </Talent>
+
+  <Talent identifier="TimeOfRebirth">
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="2,3" sheetelementsize="128,128"/>
+    <Description tag="talentdescription.TimeOfRebirth" />
+    <AbilityGroupInterval interval="1">
+      <Conditions>
+        <AbilityConditionHasAffliction afflictionidentifier="Oripathy" />
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects>
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+              <Affliction identifier="Oripathy" strength="-100" /> 
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupInterval>
+  </Talent>
+
+  <Talent identifier="Hunters">
+    <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="3,4" sheetelementsize="128,128"/>
+    <Description tag="talentdescription.Hunters">
+      <Replace tag="[itemname]" value="深海猎人大剑" color="gui.orange"/>
+      <Replace tag="[amount]" value="30" color="gui.green"/>
+    </Description>
+    <AbilityGroupInterval interval="1">
+      <Abilities>
+        <CharacterAbilityApplyStatusEffects> 
+          <StatusEffects>
+            <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+              <Affliction identifier="Hunters_Affliction" amount="100"/>
+            </StatusEffect>
+          </StatusEffects>
+        </CharacterAbilityApplyStatusEffects>
+      </Abilities>
+    </AbilityGroupInterval>
+    <AddedRecipe itemidentifier="AbyssalHunterGreatSword"/>
+  </Talent>
+
+</Talents>
