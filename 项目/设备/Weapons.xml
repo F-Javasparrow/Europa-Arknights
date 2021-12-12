@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <Item name="深海猎人大剑" identifier="AbyssalHunterGreatSword" category="Equipment" Tags="bigitem,weapon" cargocontaineridentifier="metalcrate" scale="0.20" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+  <Item name="深海猎人大剑" identifier="EA_AbyssalHunterGreatSword" category="Equipment" Tags="bigitem,weapon" cargocontaineridentifier="metalcrate" scale="0.20" impactsoundtag="impact_metal_light" RequireAimToUse="True">
     <InventoryIcon texture="Mods/Europa Arknights/Items/Equipments/Sword.png" sourcerect="69,35,260,930" origin="0.38412514,0.84734565" />
     <Sprite texture="Mods/Europa Arknights/Items/Equipments/Sword.png" sourcerect="67,35,260,930" depth="0.55" origin="0.40549135,0.85307986" />
     <Body width="1250" height="80" density="9.9" />
@@ -112,7 +112,7 @@
     </Quality>
   </Item>
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <Item name="源石铳" identifier="OriginiumAR" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith" Scale="0.3" impactsoundtag="impact_metal_light">
+  <Item name="源石铳" identifier="EA_OriginiumAR" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith" Scale="0.3" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="weaponholder" spawnprobability="0.1" />
     <PreferredContainer primary="secarmcab" minamount="1" maxamount="2" spawnprobability="1" />
     <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="2" spawnprobability="0.25" />
@@ -166,7 +166,7 @@
     </ItemContainer>
     <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
   </Item>
-  <Item name="试验型源石聚能步枪" identifier="ExperimentalShapedEnergyRifle" category="Equipment" tags="mediumitem,weapon,gun,gunsmith" Scale="0.35" impactsoundtag="impact_metal_light">
+  <Item name="试验型源石聚能步枪" identifier="EA_ExperimentalShapedEnergyRifle" category="Equipment" tags="mediumitem,weapon,gun,gunsmith" Scale="0.35" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="wrecksecurearmcab,wreckarmcab,wreckshuttlecrate" minamount="0" maxamount="1" spawnprobability="0.05" />
     <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="Weapons" level="40" />
@@ -209,7 +209,7 @@
       <Containable identifiers="EA_EA_LiquidOriginiumTank" />
     </ItemContainer>
   </Item>
-  <Item name="液态源石切割器" identifier="OriginiumCutter" category="Equipment" Tags="smallitem,cuttingequipment,tool" cargocontaineridentifier="metalcrate" description="" Scale="0.5" impactsoundtag="impact_metal_light">
+  <Item name="液态源石切割器" identifier="EA_OriginiumCutter" category="Equipment" Tags="smallitem,cuttingequipment,tool" cargocontaineridentifier="metalcrate" description="" Scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="divingcab" minamount="1" maxamount="3" spawnprobability="1" />
     <PreferredContainer primary="engcab" minamount="1" maxamount="2" spawnprobability="1" />
     <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab" minamount="0" maxamount="1" spawnprobability="0.2" />
@@ -302,7 +302,7 @@
     </Quality>
   </Item>
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <Item name="源石手雷" identifier="OriginiumGrenade" category="Equipment" maxstacksize="4" cargocontaineridentifier="explosivecrate" tags="smallitem,weapon,explosive,demolitionsexpert" scale="0.20" impactsoundtag="impact_metal_heavy">
+  <Item name="源石手雷" identifier="EA_OriginiumGrenade" category="Equipment" maxstacksize="4" cargocontaineridentifier="explosivecrate" tags="smallitem,weapon,explosive,demolitionsexpert" scale="0.20" impactsoundtag="impact_metal_heavy">
     <PreferredContainer primary="secarmcab" minamount="1" maxamount="5" spawnprobability="1" />
     <PreferredContainer secondary="wreckarmcab" minamount="0" maxamount="2" spawnprobability="0.175" />
     <PreferredContainer secondary="abandonedarmcab" minamount="0" maxamount="2" spawnprobability="0.2" />
@@ -347,7 +347,7 @@
       <QualityStat stattype="ExplosionDamage" value="0.1" />
     </Quality>
   </Item>
-  <Item name="活化源石炸药" identifier="OriginiumC4block" description="" category="Misc" Tags="smallitem,explosive,demolitionsexpert" maxstacksize="8" Scale="0.4" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_soft">
+  <Item name="活化源石炸药" identifier="EA_OriginiumC4block" description="" category="Misc" Tags="smallitem,explosive,demolitionsexpert" maxstacksize="8" Scale="0.4" cargocontaineridentifier="explosivecrate" impactsoundtag="impact_soft">
     <PreferredContainer primary="secarmcab" minamount="1" maxamount="2" spawnprobability="0.5" />
     <Price baseprice="400" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.4" sold="false" />
