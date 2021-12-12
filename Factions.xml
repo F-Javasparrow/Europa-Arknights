@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Factions>
+  <Faction identifier="ReunionMovement" initialreputation="-5" minreputation="-100" maxreputation="100">
+    <Icon texture="Mods/Europa Arknights/UI/ReunionMovementIcon.png" sourcerect="0,-12,256,256" origin="0.5,0.5" />
+    <Portrait name="ReunionMovementPortrait" texture="Mods/Europa Arknights/UI/ReunionMovement.png" sourcerect="0,0,852,340" />
+  </Faction>
+</Factions>

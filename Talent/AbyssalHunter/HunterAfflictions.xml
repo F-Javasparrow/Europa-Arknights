@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Afflictions>
+  <Affliction
+    name="深海之血"
+    identifier="BloodOfTheDeep_Affliction"
+    description=""
+    type="buffs"
+    limbspecific="false"
+    maxstrength="100">
+
+    <Effect minstrength="0" maxstrength="100" strengthchange="-1" >
+      <StatusEffect target="Character" setvalue="true">
+        <ReduceAffliction  identifier="damage" strength="0.005" />
+        <Affliction identifier="Psychosis" amount="1.01" />
+      </StatusEffect>
+    </Effect>
+
+    <Effect minstrength="0" maxstrength="100" strengthchange="-1" 
+      resistancefor="Oripathy"
+      minresistance="1"
+      maxresistance="1" >
+    </Effect>
+    <Icon texture="Mods/Europa Arknights/UI/AbyssalHunter.png" sourcerect="0,0,128,128" color="195,136,60,255" origin="0,0"/>
+  </Affliction>
+
+  <Affliction
+    name="深海猎人"
+    identifier="Hunters_Affliction"
+    description=""
+    type="buffs"
+    limbspecific="false"
+    maxstrength="100">
+
+    <Effect minstrength="0" maxstrength="100" strengthchange="-1" 
+      resistancefor="Oripathy"
+      minresistance="1"
+      maxresistance="1" >
+    </Effect>
+
+    <Effect minstrength="0" maxstrength="100" strengthchange="-1" 
+      resistancefor="damage"
+      minresistance="0"
+      maxresistance="0.3" >
+    </Effect>
+    <Icon texture="Mods/Europa Arknights/UI/AbyssalHunter.png" sourcerect="0,0,128,128" color="195,136,60,255" origin="0,0"/>
+  </Affliction>
+</Afflictions>
