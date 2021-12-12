@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<levelobjects>
+  <!-- a series of background chunks that spawn along walls -->
+  <BackgroundChunks identifier="VolcanicActivityAreaBackgroundchunks" spawnpos="Wall, RuinWall" minsurfacewidth="0" minsize="0.5" maxsize="1.5" randomrotation="-180,180" commonness="0" depthrange="1000,2000" alignment="TopLeft, BottomRight" clusteringamount="0" clusteringgroup="0" alignwithsurface="False" swingamount="0" swingfrequency="0" scaleoscillation="0,0" scaleoscillationfrequency="0" sonardisruption="0" maxcount="10000000" randomoffset="100,100" allowatstart="True" allowatend="True" takelevelwalldamage="False" hidewhenbroken="False" health="100">
+    <overridecommonness leveltype="VolcanicActivityArea" commonness="100" />
+    <Sprite texture="Mods/Europa Arknights/Map/Biomes/VolcanicActivityArea/BackgroundChunks.png" sourcerect="0,0,683,1024" origin="0.5,0.5" />
+    <Sprite texture="Mods/Europa Arknights/Map/Biomes/VolcanicActivityArea/BackgroundChunks.png" sourcerect="683,0,683,1024" origin="0.5,0.5" />
+    <Sprite texture="Mods/Europa Arknights/Map/Biomes/VolcanicActivityArea/BackgroundChunks.png" sourcerect="1365,0,683,1024" origin="0.5,0.5" />
+  </BackgroundChunks>
+  <EdgeChunks identifier="VolcanicActivityAreaEdgechunks" spawnpos="Wall, RuinWall" minsurfacewidth="900" minsize="0.5" maxsize="0.5" randomrotation="-5,5" randomoffset="50,50" commonness="0" depthrange="-1,0" alignment="TopLeft, BottomRight" clusteringamount="0" clusteringgroup="0" alignwithsurface="True" swingamount="0" swingfrequency="0" scaleoscillation="0,0" scaleoscillationfrequency="0" sonardisruption="0" maxcount="10000" allowatstart="True" allowatend="True" takelevelwalldamage="False" hidewhenbroken="False" health="100">
+    <overridecommonness leveltype="VolcanicActivityArea" commonness="100" />
+    <Sprite texture="Mods/Europa Arknights/Map/Biomes/VolcanicActivityArea/WallEdgeChunks.png" sourcerect="0,0,823,420" origin="0.5,0.7" />
+    <Sprite texture="Mods/Europa Arknights/Map/Biomes/VolcanicActivityArea/WallEdgeChunks.png" sourcerect="828,0,388,420" origin="0.5,0.7" />
+    <Sprite texture="Mods/Europa Arknights/Map/Biomes/VolcanicActivityArea/WallEdgeChunks.png" sourcerect="1218,64,826,1364" origin="0.5,0.6" />
+    <Sprite texture="Mods/Europa Arknights/Map/Biomes/VolcanicActivityArea/WallEdgeChunks.png" sourcerect="0,420,1016,515" origin="0.5,0.7" />
+    <Sprite texture="Mods/Europa Arknights/Map/Biomes/VolcanicActivityArea/WallEdgeChunks.png" sourcerect="16,935,758,1113" origin="0.6,0.7" />
+    <Sprite texture="Mods/Europa Arknights/Map/Biomes/VolcanicActivityArea/WallEdgeChunks.png" sourcerect="790,1451,452,597" origin="0.5,0.7" />
+    <Sprite texture="Mods/Europa Arknights/Map/Biomes/VolcanicActivityArea/WallEdgeChunks.png" sourcerect="1246,1435,798,609" origin="0.5,0.7" />
+  </EdgeChunks>
+  <!-- Plants -->
+  <devilspikes identifier="VolcanicActivityAreaDevilspikes" spawnpos="Wall, RuinWall" minsurfacewidth="300" minsize="0.5" maxsize="0.5" randomrotation="-5,5" randomoffset="0,0" commonness="0" depthrange="-1,1" alignment="TopLeft, BottomRight" clusteringamount="0" clusteringgroup="0" alignwithsurface="True" swingamount="1" swingfrequency="2" scaleoscillation="0.1,0.1" scaleoscillationfrequency="0.1" sonardisruption="0" maxcount="10000" allowatstart="True" allowatend="True" takelevelwalldamage="False" hidewhenbroken="False" health="100">
+    <overridecommonness leveltype="VolcanicActivityArea" commonness="100" />
+    <Sprite texture="Mods/Europa Arknights/Map/Biomes/VolcanicActivityArea/LevelObjects.png" sourcerect="1014,0,513,512" origin="0.5,0.8" />
+    <Sprite texture="Mods/Europa Arknights/Map/Biomes/VolcanicActivityArea/LevelObjects.png" sourcerect="1525,0,524,513" origin="0.5,0.8" />
+    <Sprite texture="Mods/Europa Arknights/Map/Biomes/VolcanicActivityArea/LevelObjects.png" sourcerect="1057,526,495,474" origin="0.5,0.8" />
+    <Sprite texture="Mods/Europa Arknights/Map/Biomes/VolcanicActivityArea/LevelObjects.png" sourcerect="1537,510,512,503" origin="0.5,0.8" />
+    <Sprite texture="Mods/Europa Arknights/Map/Biomes/VolcanicActivityArea/LevelObjects.png" sourcerect="1050,995,432,514" origin="0.5,0.8" />
+    <Sprite texture="Mods/Europa Arknights/Map/Biomes/VolcanicActivityArea/LevelObjects.png" sourcerect="1533,1023,524,443" origin="0.5,0.8" />
+    <Sprite texture="Mods/Europa Arknights/Map/Biomes/VolcanicActivityArea/LevelObjects.png" sourcerect="1520,4,532,520" origin="0.5,0.8" />
+    <Sprite texture="Mods/Europa Arknights/Map/Biomes/VolcanicActivityArea/LevelObjects.png" sourcerect="-7,-3,512,512" origin="0.5,0.8" />
+  </devilspikes>
+  <growths identifier="VolcanicActivityAreaGrowths" spawnpos="Wall, RuinWall" minsurfacewidth="300" minsize="0.5" maxsize="0.5" randomrotation="-5,5" randomoffset="0,0" commonness="0" depthrange="-1,1" alignment="TopLeft, BottomRight" clusteringamount="0" clusteringgroup="0" alignwithsurface="True" swingamount="0" swingfrequency="0" scaleoscillation="0,0" scaleoscillationfrequency="0" sonardisruption="0" maxcount="10000" allowatstart="True" allowatend="True" takelevelwalldamage="False" hidewhenbroken="False" health="100">
+    <overridecommonness leveltype="VolcanicActivityArea" commonness="100" />
+    <Sprite texture="Mods/Europa Arknights/Map/Biomes/VolcanicActivityArea/LevelObjects.png" sourcerect="1530,1543,504,508" origin="0.5,0.9" />
+    <Sprite texture="Mods/Europa Arknights/Map/Biomes/VolcanicActivityArea/LevelObjects.png" sourcerect="1018,1547,522,505" origin="0.5,0.9" />
+    <Sprite texture="Mods/Europa Arknights/Map/Biomes/VolcanicActivityArea/LevelObjects.png" sourcerect="647,1583,285,469" origin="0.5,0.9" />
+    <Sprite texture="Mods/Europa Arknights/Map/Biomes/VolcanicActivityArea/LevelObjects.png" sourcerect="16,1563,469,489" origin="0.5,0.9" />
+    <Sprite texture="Mods/Europa Arknights/Map/Biomes/VolcanicActivityArea/LevelObjects.png" sourcerect="552,1110,459,460" origin="0.5,0.9" />
+    <Sprite texture="Mods/Europa Arknights/Map/Biomes/VolcanicActivityArea/LevelObjects.png" sourcerect="3,1044,492,522" origin="0.5,0.9" />
+  </growths>
+  <blisteredhearts identifier="VolcanicActivityAreaBlisteredheart" spawnpos="Wall, RuinWall" minsurfacewidth="300" minsize="0.5" maxsize="0.5" randomrotation="-5,5" randomoffset="0,0" commonness="0" depthrange="-1,1" alignment="TopLeft, BottomRight" clusteringamount="0" clusteringgroup="0" alignwithsurface="True" swingamount="0" swingfrequency="0" scaleoscillation="0,0" scaleoscillationfrequency="0" sonardisruption="0" maxcount="10000" allowatstart="True" allowatend="True" takelevelwalldamage="False" hidewhenbroken="False" health="100">
+    <overridecommonness leveltype="VolcanicActivityArea" commonness="100" />
+    <Sprite texture="Mods/Europa Arknights/Map/Biomes/VolcanicActivityArea/LevelObjects.png" sourcerect="1,-1,498,506" origin="0.5,0.7" />
+    <Sprite texture="Mods/Europa Arknights/Map/Biomes/VolcanicActivityArea/LevelObjects.png" sourcerect="497,-4,524,510" origin="0.5,0.7" />
+    <Sprite texture="Mods/Europa Arknights/Map/Biomes/VolcanicActivityArea/LevelObjects.png" sourcerect="3,640,521,408" origin="0.5,0.7" />
+    <Sprite texture="Mods/Europa Arknights/Map/Biomes/VolcanicActivityArea/LevelObjects.png" sourcerect="518,643,546,405" origin="0.5,0.7" />
+  </blisteredhearts>
+</levelobjects>

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LevelGenerationParameters>
+  <VolcanicActivityArea
+    identifier="VolcanicActivityArea"
+    type="LocationConnection"
+    biomes="VolcanicActivityArea"
+    height="60000"
+    initialdepthmin="200000"
+    initialdepthmax="300000"
+    levelobjectamount="8000"
+    ambientlightcolor="4,16,4,255"
+    backgroundtexturecolor="4,16,4,255"
+    backgroundcolor="25,20,15,255"
+    wallcolor="255,135,62,255"
+    minwidth="160000"
+    maxwidth="180000"
+    voronoisiteinterval="1500,1500"
+    voronoisitevariance="700,700"
+    cellsubdivisionlength="1500"
+    cellroundingamount="0.5"
+    cellirregularity="0.2"
+    mainpathnodeintervalrange="4000,6000"
+    cavecount="3"
+    itemcount="400"
+    floatingicechunkcount="8"
+    seafloordepth="-120000"
+    seafloorvariance="3000"
+    mountaincountmin="2"
+    mountaincountmax="3"
+    mountainheightmin="100000"
+    mountainheightmax="100000"
+    ruincount="1"
+    minwreckcount="0"
+    maxwreckcount="1"
+    thalamusprobability="0.2"
+    bottomholeprobability="0.3"
+    waterparticlescale="1"
+    startposition="0.1,0.1"
+    endposition="0.99,0.02"
+    createholenexttoend="True"
+    mintunnelradius="6500"
+    mincorpsecount="1"
+    maxcorpsecount="5"
+    wreckhullfloodingchance="0.5"
+    wreckfloodinghullminwaterpercentage="0.1"
+    wreckfloodinghullmaxwaterpercentage="1"
+    sidetunnelcount="3,3"
+    minsidetunnelradius="1000,2500"
+    icespirecount="7"
+    backgroundcreatureamount="80"
+    walltexturesize="512"
+    walledgetexturewidth="1024"
+    walledgeexpandoutwardsamount="128"
+    walledgeexpandinwardsamount="128"
+    sidetunnelvariance="0.8"
+    mainpathvariance="0.3"
+    resourceintervalrange="19200,38400"
+    caveresourceintervalrange="9600,19200"
+    resourceclustersizerange="2,8"
+    resourcespawnchance="0.5"
+    caveresourcespawnchance="0.8"
+    islandcount="3"
+    createholetoabyss="True"
+    abyssislandcount="5"
+    abyssislandsizemin="4000,7000"
+    abyssislandsizemax="8000,10000"
+    abyssislandcaveprobability="0.5">
+    <WaterParticles
+      texture="Mods/Europa Arknights/Map/Biomes/VolcanicActivityArea/BackgroundParticles.png" />
+    <Wall
+      texture="Mods/Europa Arknights/Map/Biomes/VolcanicActivityArea/LevelWall.png"
+      premultiplyalpha="false" />
+    <WallEdge
+      texture="Mods/Europa Arknights/Map/Biomes/VolcanicActivityArea/LevelWallEdge.png" />
+    <DestructibleWall
+      texture="Content/Map/Biomes/DestructibleWall.png" />
+    <DestructibleWallEdge
+      texture="Content/Map/Biomes/DestructibleWallEdge.png" />
+    <WallDestroyed
+      texture="Content/Map/Biomes/DestroyedWall.png"
+      premultiplyalpha="false" />
+  </VolcanicActivityArea>
+</LevelGenerationParameters>
