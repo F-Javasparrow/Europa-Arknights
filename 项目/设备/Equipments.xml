@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
-  <Item name="隔离防护面罩" identifier="IsolationProtectiveMask" scale="0.35" category="Equipment" Tags="smallitem,diving,lightdiving" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_light">
+  <Item name="隔离防护面罩" identifier="EA_IsolationProtectiveMask" scale="0.35" category="Equipment" Tags="smallitem,diving,lightdiving" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_light">
     <Deconstruct time="10">
       <Item identifier="Carbon" />
       <Item identifier="Carbon" />
@@ -60,7 +60,7 @@
       </SubContainer>
     </ItemContainer>
   </Item>
-  <Item name="深海猎人宽沿帽" identifier="AbyssalHunterHat" aliases="" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" scale="0.2">
+  <Item name="深海猎人宽沿帽" identifier="EA_AbyssalHunterHat" aliases="" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" scale="0.2">
     <Sprite name="AbyssalHunterHat" texture="Mods/Europa Arknights/Items/Equipments/Headgear.png" depth="0.6" sourcerect="310,0,200,200" origin="0.5,0.5" />
     <Body width="75" height="50" density="30" />
 
