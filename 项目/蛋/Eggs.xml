@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Items>
-  <Item name="源石虫蛋" identifier="Infected_001egg" hideinmenus="false" health="50" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" damagedbyrepairtools="true" category="Misc" spritecolor="199,253,172,255" scale="0.5" impactsoundtag="impact_soft">
+  <Item name="源石虫蛋" identifier="EA_Infected_001egg" hideinmenus="false" health="50" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" damagedbyrepairtools="true" category="Misc" spritecolor="199,253,172,255" scale="0.5" impactsoundtag="impact_soft">
     <Sprite texture="Content/Items/CreatureLoot/CreatureLoot.png" depth="0.18" sourcerect="8,280,118,145" origin="0.5,0.5" />
 
     <Deconstruct time="10">
@@ -49,7 +49,7 @@
     </LightComponent>
   </Item>
 
-  <Item name="源石虫蛋" identifier="Infected_002egg" hideinmenus="false" health="60" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" damagedbyrepairtools="true" category="Misc" spritecolor="199,253,172,255" scale="0.5" impactsoundtag="impact_soft">
+  <Item name="源石虫蛋" identifier="EA_Infected_002egg" hideinmenus="false" health="60" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" damagedbyrepairtools="true" category="Misc" spritecolor="199,253,172,255" scale="0.5" impactsoundtag="impact_soft">
     <Sprite texture="Content/Items/CreatureLoot/CreatureLoot.png" depth="0.18" sourcerect="8,280,118,145" origin="0.5,0.5" />
 
     <Deconstruct time="10">
@@ -98,7 +98,7 @@
     </LightComponent>
   </Item>
 
-  <Item name="源石虫蛋" identifier="Infected_004egg" hideinmenus="false" health="75" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" damagedbyrepairtools="true" category="Misc" spritecolor="199,253,172,255" scale="0.5" impactsoundtag="impact_soft">
+  <Item name="源石虫蛋" identifier="EA_Infected_004egg" hideinmenus="false" health="75" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" damagedbyrepairtools="true" category="Misc" spritecolor="199,253,172,255" scale="0.5" impactsoundtag="impact_soft">
     <Sprite texture="Content/Items/CreatureLoot/CreatureLoot.png" depth="0.18" sourcerect="8,280,118,145" origin="0.5,0.5" />
 
     <Deconstruct time="10">
