@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Afflictions>
+  <Affliction
+    name="矿石病"
+    identifier="Oripathy"
+    description=""
+    type="Oripathy"
+    limbspecific="false"
+    maxstrength="1000"
+    showiconthreshold="250" >
+
+    <!--保证感染后无法治愈-->
+    <!--第零阶段(   0-    10)[+10]: 速度x1.01-->
+    <!--第一阶段(  10-  250)[-0.50]: 速度x1.1-->
+    <!--第二阶段(250-  400)[+0]: 速度x1.2 获取画皮感染抗性 25%-->
+    <!--第三阶段(400-  500)[+0]: 速度x1.2 获取画皮感染抗性 50% 获取精神病-->
+    <!--第四阶段(500-  750)[+0.02]: 速度x1.2 获取画皮感染抗性 50% 获取精神病 每秒增加0.01的恶心-->
+    <!--第五阶段(750-  900)[+0.05]: 速度x0.9 获取画皮感染抗性 50% 获取精神病 每秒增加0.02的恶心-->
+    <!--第六阶段(900-1000)[+0.50]: 速度x0.8 获取画皮感染抗性 50% 获取精神病 每秒增加0.05的恶心 0.1的内脏损伤-->
+  
+    <Effect minstrength="0" maxstrength="10" strengthchange="10" 
+      minspeedmultiplier="1.0"
+      maxspeedmultiplier="1.01" >
+    </Effect>
+
+    <Effect minstrength="10" maxstrength="250" strengthchange="-0.5" 
+      minspeedmultiplier="1.0"
+      maxspeedmultiplier="1.10" >
+    </Effect>
+
+    <Effect minstrength="250" maxstrength="400" strengthchange="0" 
+      minspeedmultiplier="1.0"
+      maxspeedmultiplier="1.20"
+      resistancefor="huskinfection"
+      minresistance="0"
+      maxresistance="0.25" >
+    </Effect>
+
+    <PeriodicEffect mininterval="400" maxinterval="1000" strengthchange="0"
+      minspeedmultiplier="1.0"
+      maxspeedmultiplier="1.20"
+      resistancefor="huskinfection"
+      minresistance="0"
+      maxresistance="0.5" >
+      <StatusEffect target="Character" onlyoutside="true">
+        <Conditional IsLocalPlayer="True"/>
+        <Sound file="Content/Characters/Spineling/SPINELING_idle2.ogg" selectionmode="Random"/>
+        <Sound file="Content/Characters/Spineling/SPINELING_idle4.ogg" />
+        <Sound file="Content/Characters/Tigerthresher/TIGERTRESHER_idle1.ogg" />
+        <Sound file="Content/Characters/Tigerthresher/TIGERTRESHER_idle2.ogg" />
+        <Sound file="Content/Characters/Tigerthresher/TIGERTRESHER_attack1.ogg" />
+        <Sound file="Content/Characters/Moloch/MOLOCH_attack1.ogg" />
+        <Sound file="Content/Characters/Moloch/MOLOCH_attack2.ogg" />
+        <Sound file="Content/Characters/Husk/HUSK_idle1.ogg" />
+        <Sound file="Content/Characters/Husk/HUSK_idle4.ogg" />
+        <Sound file="Content/Characters/Hammerheadmatriarch/MHAMMERHEAD_idle3.ogg" />
+        <Sound file="Content/Characters/Hammerhead/HAMMERHEAD_idle4.ogg" />
+        <Sound file="Content/Characters/Hammerhead/HAMMERHEAD_attack2.ogg" />
+        <Sound file="Content/Characters/Hammerhead/HAMMERHEAD_attack3.ogg" />
+        <Sound file="Content/Characters/Crawlerhusk/HUSKEDCRAWLER_idle1.ogg" />
+        <Sound file="Content/Characters/Crawlerhusk/HUSKEDCRAWLER_idle3.ogg" />
+        <Sound file="Content/Characters/Crawlerhusk/HUSKEDCRAWLER_attack2.ogg" />
+      </StatusEffect>
+      <StatusEffect target="Character" onlyinside="true">
+        <Conditional IsLocalPlayer="True"/>
+        <Sound file="Content/Items/Weapons/honk.ogg" selectionmode="Random" />
+        <Sound file="Content/Items/Weapons/ShotgunShot1.ogg" />
+        <Sound file="Content/Items/Weapons/ShotgunShot2.ogg" />
+        <Sound file="Content/Characters/Moloch/MOLOCH_attack1.ogg" />
+        <Sound file="Content/Characters/Moloch/MOLOCH_attack2.ogg" />
+        <Sound file="Content/Characters/Mudraptor/MUDRAPTOR_attack1.ogg" />
+        <Sound file="Content/Characters/Mudraptor/MUDRAPTOR_attack2.ogg" />
+        <Sound file="Content/Characters/Mudraptor/MUDRAPTOR_idle4.ogg" />
+        <Sound file="Content/Characters/Husk/HUSK_idle1.ogg" />
+        <Sound file="Content/Characters/Husk/HUSK_idle4.ogg" />
+        <Sound file="Content/Characters/Husk/HUSK_attack4.ogg" />
+        <Sound file="Content/Characters/Crawler/CRAWLER_idle3.ogg" />
+      </StatusEffect>
+    </PeriodicEffect>
+
+    <Effect minstrength="500" maxstrength="750" strengthchange="0.02" >
+      <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true">
+        <Affliction identifier="nausea" amount="1.01" />
+      </StatusEffect>
+    </Effect>
+
+    <Effect minstrength="750" maxstrength="900" strengthchange="0.05" 
+      minspeedmultiplier="0.9"
+      maxspeedmultiplier="1">
+      <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true">
+        <Affliction identifier="nausea" amount="1.02" />
+        <StatValue stattype="MeleeAttackMultiplier" minvalue="1" maxvalue="1.35" />
+      </StatusEffect>
+    </Effect>
+
+    <Effect minstrength="900" maxstrength="1000" strengthchange="0.5" 
+      minspeedmultiplier="0.8"
+      maxspeedmultiplier="1">
+      <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true">
+        <Affliction identifier="nausea" amount="1.05" />
+        <Affliction identifier="internaldamage" amount="0.1" />
+      </StatusEffect>
+    </Effect>
+
+    <Icon texture="Mods/Europa Arknights/Afflictions/OripathyIcon.png" sourcerect="0,0,128,128" color="195,136,60,255" origin="0,0"/>
+  </Affliction>
+
+  <Affliction
+    name="矿石病抵抗"
+    identifier="OripathyResistance"
+    description=""
+    type="resistance"
+    limbspecific="false"
+    maxstrength="1000">
+
+    <Effect minstrength="0" maxstrength="1000" strengthchange="-1" 
+      resistancefor="Oripathy"
+      minresistance="0"
+      maxresistance="0.5" >
+      <Affliction identifier="ResistanceDrugAddiction" amount="0.05" />
+    </Effect>
+  </Affliction>
+
+  <Affliction
+    name="抵抗药物 成瘾"
+    identifier="ResistanceDrugAddiction"
+    description=""
+    type="poison"
+    limbspecific="false"
+    maxstrength="100">
+
+    <Effect minstrength="20" maxstrength="40" strengthchange="-0.05">
+      <StatusEffect target="Character">
+        <Affliction identifier="ResistanceDrugWithdrawal" strength="0.1"/>
+      </StatusEffect>
+    </Effect>
+
+    <Effect minstrength="40" maxstrength="80" strengthchange="-0.1">
+      <StatusEffect target="Character">
+        <Affliction identifier="ResistanceDrugWithdrawal" strength="0.25"/>
+      </StatusEffect>
+    </Effect>
+
+    <Effect minstrength="80" maxstrength="100" strengthchange="-0.1"
+      minvitalitydecrease="0"
+      maxvitalitydecrease="20">
+      <StatusEffect target="Character">
+        <Affliction identifier="ResistanceDrugWithdrawal" strength="0.5"/>
+      </StatusEffect>
+    </Effect>
+
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="384,768,128,128" color="195,180,60,255" origin="0,0"/>
+  </Affliction>
+
+  <Affliction
+    name="抵抗药物 戒断"
+    identifier="ResistanceDrugWithdrawal"
+    description=""
+    type="poison"
+    causeofdeathdescription="Died of Resistance Drug Withdrawal"
+    selfcauseofdeathdescription="You have died of Resistance Drug withdrawal."
+    limbspecific="false"
+    showiconthreshold="20"
+    maxstrength="100">
+
+    <!-- Slow down the character and slightly decrease vitality -->
+    <Effect minstrength="20" maxstrength="40"
+      minvitalitydecrease="0"
+      maxvitalitydecrease="20"
+      strengthchange="-0.05"
+      minchromaticaberration="0.0"
+      maxchromaticaberration="1.0"
+      minfacetint="255,255,255,0"
+      maxfacetint="255,255,255,50">
+
+      <StatusEffect target="Character" SpeedMultiplier="0.8" setvalue="true"/>
+      <Affliction identifier="nausea" strength="30" probability="0.1" />
+    </Effect>
+
+    <!-- Decrease vitality more. The strength of the affliction drops faster, meaning that 
+    the character needs a stronger opiate addiction for the withdrawal symptoms to stay at this level -->
+    <Effect minstrength="40" maxstrength="80"
+      minvitalitydecrease="20"
+      maxvitalitydecrease="50"
+      strengthchange="-0.1"
+      minchromaticaberration="1.0"
+      maxchromaticaberration="5.0"
+      minfacetint="255,255,255,50"
+      maxfacetint="255,255,255,100">
+      <StatusEffect target="Character" SpeedMultiplier="0.7" setvalue="true"/>
+      <Affliction identifier="nausea" strength="30" probability="0.3" />
+    </Effect>
+
+    <!-- Withdrawal symptoms start to get lethal at this level -->
+    <Effect minstrength="80" maxstrength="100"
+      minvitalitydecrease="50"
+      maxvitalitydecrease="200"
+      minscreendistort="0.0"
+      maxscreendistort="3.0"
+      strengthchange="-0.2"
+      minchromaticaberration="5.0"
+      maxchromaticaberration="10.0"
+      minradialdistort="40.0"
+      maxradialdistort="80.0"
+      minfacetint="255,255,255,100"
+      maxfacetint="255,255,255,150">
+      <StatusEffect target="Character" SpeedMultiplier="0.5" color="195,136,60,255" setvalue="true"/>
+      <Affliction identifier="nausea" strength="30" probability="0.5" />
+    </Effect>
+
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="512,768,128,128" color="209,121,84,255" origin="0,0"/>
+  </Affliction>
+
+</Afflictions>
