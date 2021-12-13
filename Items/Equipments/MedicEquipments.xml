@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Items>
-  <Item name="半自然溶剂" identifier="SeminaturalSolvent" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light" useinhealthinterface="true">
+  <Item name="半自然溶剂" identifier="EA_SeminaturalSolvent" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light" useinhealthinterface="true">
 
     <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
     <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.01"/>
@@ -12,18 +12,16 @@
 
     <Fabricate suitablefabricators="medicalfabricator" requiredtime="30" amount="2">
       <RequiredSkill identifier="medic" level="55" />
-      <RequiredItem identifier="OriginiumInfectsBlood" />
-      <RequiredItem identifier="OriginiumInfectsBlood" />
-      <RequiredItem identifier="OriginiumInfectsBlood" />
-      <RequiredItem identifier="OriginiumInfectsBlood" />
-      <RequiredItem identifier="KetoneAgglutination" />
+      <RequiredItem identifier="EA_OriginiumInfectsBlood" />
+      <RequiredItem identifier="EA_OriginiumInfectsBlood" />
+      <RequiredItem identifier="EA_OriginiumInfectsBlood" />
+      <RequiredItem identifier="EA_KetoneAgglutination" />
     </Fabricate>
     <Deconstruct time="25">
-      <Item identifier="OriginiumInfectsBlood" copycondition="true"/>
-      <Item identifier="OriginiumInfectsBlood" copycondition="true"/>
-      <Item identifier="OriginiumInfectsBlood" copycondition="true"/>
-      <Item identifier="OriginiumInfectsBlood" copycondition="true"/>
-      <Item identifier="KetoneAgglutination" copycondition="true"/>
+      <Item identifier="EA_OriginiumInfectsBlood" copycondition="true"/>
+      <Item identifier="EA_OriginiumInfectsBlood" copycondition="true"/>
+      <Item identifier="EA_OriginiumInfectsBlood" copycondition="true"/>
+      <Item identifier="EA_KetoneAgglutination" copycondition="true"/>
     </Deconstruct>
 
     <InventoryIcon texture="Mods/Europa Arknights/Items/Equipments/Equipments.png" sourcerect="0,255,125,125" />
@@ -67,7 +65,7 @@
     
   </Item>
 
-  <Item name="活性制剂" identifier="ActiveAgent" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light" useinhealthinterface="true">
+  <Item name="活性制剂" identifier="EA_ActiveAgent" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light" useinhealthinterface="true">
 
     <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
     <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="3" spawnprobability="0.06"/>
@@ -78,13 +76,13 @@
 
     <Fabricate suitablefabricators="medicalfabricator" requiredtime="25">
       <RequiredSkill identifier="medic" level="55" />
-      <RequiredItem identifier="SeminaturalSolvent" />
-      <RequiredItem identifier="SeminaturalSolvent" />
+      <RequiredItem identifier="EA_SeminaturalSolvent" />
+      <RequiredItem identifier="EA_SeminaturalSolvent" />
       <RequiredItem identifier="stabilozine" />
     </Fabricate>
     <Deconstruct time="20">
-      <Item identifier="Semi-naturalSolvent" copycondition="true"/>
-      <Item identifier="Semi-naturalSolvent" copycondition="true"/>
+      <Item identifier="EA_SeminaturalSolvent" copycondition="true"/>
+      <Item identifier="EA_SeminaturalSolvent" copycondition="true"/>
       <Item identifier="stabilozine" copycondition="true"/>
     </Deconstruct>
 
@@ -135,7 +133,7 @@
   </Item>
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <Item name="源石抵抗合剂" identifier="OripathyResistanceFlask" category="Material" maxstacksize="8" Tags="smallitem,OripathyMedicine" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light" useinhealthinterface="true">
+  <Item name="源石抵抗合剂" identifier="EA_OripathyResistanceFlask" category="Material" maxstacksize="8" Tags="smallitem,OripathyMedicine" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light" useinhealthinterface="true">
 
     <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="0.06"/>
     <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="2" spawnprobability="0.06"/>
@@ -146,13 +144,13 @@
 
     <Fabricate suitablefabricators="medicalfabricator" requiredtime="25">
       <RequiredSkill identifier="medic" level="55" />
-      <RequiredItem identifier="ActiveAgent" />
-      <RequiredItem identifier="KetoneAgglutination" />
+      <RequiredItem identifier="EA_ActiveAgent" />
+      <RequiredItem identifier="EA_KetoneAgglutination" />
       <RequiredItem identifier="steroids" />
       <RequiredItem identifier="stabilozine" />
     </Fabricate>
     <Deconstruct time="20">
-      <Item identifier="Semi-naturalSolvent" copycondition="true"/>
+      <Item identifier="EA_SeminaturalSolvent" copycondition="true"/>
       <Item identifier="stabilozine" copycondition="true"/>
     </Deconstruct>
 
@@ -198,7 +196,7 @@
     </Holdable>
   </Item>
 
-  <Item name="理智合剂" identifier="SanityFlask" category="Material" maxstacksize="8" Tags="smallitem,OripathyMedicine" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light" useinhealthinterface="true">
+  <Item name="理智合剂" identifier="EA_SanityFlask" category="Material" maxstacksize="8" Tags="smallitem,OripathyMedicine" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light" useinhealthinterface="true">
 
     <Price baseprice="250" soldeverywhere="false">
       <Price locationtype="research" multiplier="1" sold="true"/>
@@ -206,8 +204,8 @@
 
     <Fabricate suitablefabricators="medicalfabricator" requiredtime="25">
       <RequiredSkill identifier="medic" level="75" />
-      <RequiredItem identifier="OripathyResistanceFlask" />
-      <RequiredItem identifier="Originiums" />
+      <RequiredItem identifier="EA_OripathyResistanceFlask" />
+      <RequiredItem identifier="EA_Originiums" />
     </Fabricate>
     <Deconstruct time="20">
       <Item identifier="OripathyResistanceFlask" copycondition="true"/>
@@ -253,13 +251,13 @@
     </Holdable>
   </Item>
 
-  <Item name="源石解析液" identifier="OriginiumAnalysisFluid" category="Material" maxstacksize="8" Tags="smallitem,OripathyMedicine" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light" useinhealthinterface="true">
+  <Item name="源石解析液" identifier="EA_OriginiumAnalysisFluid" category="Material" maxstacksize="8" Tags="smallitem,OripathyMedicine" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light" useinhealthinterface="true">
 
     <Fabricate suitablefabricators="medicalfabricator" requiredtime="15" requiresrecipe="true" >
       <RequiredSkill identifier="medic" level="75" />
-      <RequiredItem identifier="OripathyResistanceFlask" />
-      <RequiredItem identifier="KetoneAgglutination" />
-      <RequiredItem identifier="KetoneAgglutination" />
+      <RequiredItem identifier="EA_OripathyResistanceFlask" />
+      <RequiredItem identifier="EA_KetoneAgglutination" />
+      <RequiredItem identifier="EA_KetoneAgglutination" />
       <RequiredItem identifier="stabilozine" />
     </Fabricate>
 

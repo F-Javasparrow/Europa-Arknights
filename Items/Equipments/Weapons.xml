@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <Item name="深海猎人大剑" identifier="AbyssalHunterGreatSword" category="Equipment" Tags="bigitem,weapon" cargocontaineridentifier="metalcrate" scale="0.20" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+  <Item name="深海猎人大剑" identifier="EA_AbyssalHunterGreatSword" category="Equipment" Tags="bigitem,weapon" cargocontaineridentifier="metalcrate" scale="0.20" impactsoundtag="impact_metal_light" RequireAimToUse="True">
     <InventoryIcon texture="Mods/Europa Arknights/Items/Equipments/Sword.png" sourcerect="69,35,260,930" origin="0.38412514,0.84734565" />
     <Sprite texture="Mods/Europa Arknights/Items/Equipments/Sword.png" sourcerect="67,35,260,930" depth="0.55" origin="0.40549135,0.85307986" />
     <Body width="1250" height="80" density="9.9" />
     <Fabricate suitablefabricators="fabricator" requiredtime="30" requiresrecipe="true">
       <RequiredSkill identifier="Weapons" level="40" />
-      <RequiredItem identifier="D32" />
-      <RequiredItem identifier="DissimilarIron" />
-      <RequiredItem identifier="DissimilarIron" />
-      <RequiredItem identifier="ActiveAgent" />
+      <RequiredItem identifier="EA_D32" />
+      <RequiredItem identifier="EA_DissimilarIron" />
+      <RequiredItem identifier="EA_DissimilarIron" />
+      <RequiredItem identifier="EA_ActiveAgent" />
     </Fabricate>
     <Deconstruct time="10">
-      <Item identifier="D32" />
-      <Item identifier="DissimilarIron" />
-      <Item identifier="DissimilarIron" />
-      <Item identifier="ActiveAgent" />
+      <Item identifier="EA_D32" />
+      <Item identifier="EA_DissimilarIron" />
+      <Item identifier="EA_DissimilarIron" />
+      <Item identifier="EA_ActiveAgent" />
     </Deconstruct>
     <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="50,0" handle1="-10,0" holdangle="0" reload="1.5" range="200" combatPriority="50" msg="ItemMsgPickUpSelect">
       <Attack targetimpulse="5" severlimbsprobability="7.5" itemdamage="50" structuredamage="25" penetration="0.5" structuresoundtype="StructureSlash">
@@ -40,15 +40,15 @@
   </Item>
   <Item name="影霄" identifier="EA_ShadowSword" category="Equipment" Tags="weapon,gunsmith" scale="0.17" requireaimtouse="true" impactsoundtag="impact_metal_light">
     <Deconstruct time="20">
-      <Item identifier="D32" />
-      <Item identifier="DissimilarIron" />
-      <Item identifier="ActiveAgent" />
+      <Item identifier="EA_D32" />
+      <Item identifier="EA_DissimilarIron" />
+      <Item identifier="EA_ActiveAgent" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="40" />
-      <RequiredItem identifier="D32" />
-      <RequiredItem identifier="DissimilarIron" />
-      <RequiredItem identifier="ActiveAgent" />
+      <RequiredItem identifier="EA_D32" />
+      <RequiredItem identifier="EA_DissimilarIron" />
+      <RequiredItem identifier="EA_ActiveAgent" />
     </Fabricate>
     <InventoryIcon texture="Mods/Europa Arknights/Items/Equipments/Sword.png" sourcerect="528,78,170,880" origin="0.5,0.5" />
     <Sprite texture="Mods/Europa Arknights/Items/Equipments/Sword.png" sourcerect="528,80,170,881" depth="0.55" origin="0.5,0.8" />
@@ -75,18 +75,18 @@
   </Item>
   <Item name="史尔特尔" identifier="EA_Surtr" aliases="" scale="0.20" category="Equipment" tags="smallitem,weapon" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_heavy">
     <Deconstruct time="10">
-      <Item identifier="D32" />
-      <Item identifier="DissimilarIron" />
-      <Item identifier="DissimilarIron" />
-      <Item identifier="ActiveAgent" />
+      <Item identifier="EA_D32" />
+      <Item identifier="EA_DissimilarIron" />
+      <Item identifier="EA_DissimilarIron" />
+      <Item identifier="EA_ActiveAgent" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="15">
       <RequiredSkill identifier="weapons" level="25" />
       <RequiredSkill identifier="helm" level="40" />
-      <RequiredItem identifier="D32" />
-      <RequiredItem identifier="DissimilarIron" />
-      <RequiredItem identifier="DissimilarIron" />
-      <RequiredItem identifier="ActiveAgent" />
+      <RequiredItem identifier="EA_D32" />
+      <RequiredItem identifier="EA_DissimilarIron" />
+      <RequiredItem identifier="EA_DissimilarIron" />
+      <RequiredItem identifier="EA_ActiveAgent" />
     </Fabricate>
     <InventoryIcon texture="Mods/Europa Arknights/Items/Equipments/Sword.png" sourcerect="692,57,300,887" origin="0.5546242,0.48535287" />
     <Sprite texture="Mods/Europa Arknights/Items/Equipments/Sword.png" sourcerect="693,58,299,884" depth="0.55" origin="0.54143274,0.67981017" />
@@ -112,7 +112,7 @@
     </Quality>
   </Item>
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-  <Item name="源石铳" identifier="OriginiumAR" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith" Scale="0.3" impactsoundtag="impact_metal_light">
+  <Item name="源石铳" identifier="EA_OriginiumAR" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith" Scale="0.3" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="weaponholder" spawnprobability="0.1" />
     <PreferredContainer primary="secarmcab" minamount="1" maxamount="2" spawnprobability="1" />
     <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="2" spawnprobability="0.25" />
@@ -126,14 +126,14 @@
     </Price>
     <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="Weapons" level="40" />
-      <RequiredItem identifier="DissimilarIron" />
-      <RequiredItem identifier="ActiveAgent" />
+      <RequiredItem identifier="EA_DissimilarIron" />
+      <RequiredItem identifier="EA_ActiveAgent" />
       <RequiredItem identifier="plastic" />
       <RequiredItem identifier="plastic" />
     </Fabricate>
     <Deconstruct time="10">
-      <Item identifier="DissimilarIron" />
-      <Item identifier="ActiveAgent" />
+      <Item identifier="EA_DissimilarIron" />
+      <Item identifier="EA_ActiveAgent" />
       <Item identifier="plastic" />
       <Item identifier="plastic" />
     </Deconstruct>
@@ -166,20 +166,20 @@
     </ItemContainer>
     <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
   </Item>
-  <Item name="试验型源石聚能步枪" identifier="ExperimentalShapedEnergyRifle" category="Equipment" tags="mediumitem,weapon,gun,gunsmith" Scale="0.35" impactsoundtag="impact_metal_light">
+  <Item name="试验型源石聚能步枪" identifier="EA_ExperimentalShapedEnergyRifle" category="Equipment" tags="mediumitem,weapon,gun,gunsmith" Scale="0.35" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="wrecksecurearmcab,wreckarmcab,wreckshuttlecrate" minamount="0" maxamount="1" spawnprobability="0.05" />
     <Fabricate suitablefabricators="fabricator" requiredtime="30">
       <RequiredSkill identifier="Weapons" level="40" />
-      <RequiredItem identifier="D32" />
-      <RequiredItem identifier="ActiveAgent" />
-      <RequiredItem identifier="KetoneAgglutination" />
-      <RequiredItem identifier="Originiums" />
+      <RequiredItem identifier="EA_D32" />
+      <RequiredItem identifier="EA_ActiveAgent" />
+      <RequiredItem identifier="EA_KetoneAgglutination" />
+      <RequiredItem identifier="EA_Originiums" />
     </Fabricate>
     <Deconstruct time="40">
-      <Item identifier="D32" />
-      <Item identifier="ActiveAgent" />
-      <Item identifier="KetoneAgglutination" />
-      <Item identifier="Originiums" />
+      <Item identifier="EA_D32" />
+      <Item identifier="EA_ActiveAgent" />
+      <Item identifier="EA_KetoneAgglutination" />
+      <Item identifier="EA_Originiums" />
     </Deconstruct>
     <InventoryIcon texture="Mods/Europa Arknights/Items/Equipments/Guns.png" sourcerect="10,20,250,110" />
     <Sprite texture="Guns.png" sourcerect="10,20,250,110" depth="0.55" />
@@ -198,7 +198,7 @@
         <Explosion range="140.0" force="0.5" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="Contained">
-        <RequiredItem items="EA_EA_LiquidOriginiumTank" type="Contained" />
+        <RequiredItem items="EA_LiquidOriginiumTank" type="Contained" />
         <Use />
       </StatusEffect>
       <RequiredItems items="EA_LiquidOriginiumTank" type="Contained" msg="ItemMsgAmmoRequired" />
@@ -206,25 +206,25 @@
     </RangedWeapon>
     <ItemContainer autofill="True" capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
       <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />
-      <Containable identifiers="EA_EA_LiquidOriginiumTank" />
+      <Containable identifiers="EA_LiquidOriginiumTank" />
     </ItemContainer>
   </Item>
-  <Item name="液态源石切割器" identifier="OriginiumCutter" category="Equipment" Tags="smallitem,cuttingequipment,tool" cargocontaineridentifier="metalcrate" description="" Scale="0.5" impactsoundtag="impact_metal_light">
+  <Item name="液态源石切割器" identifier="EA_OriginiumCutter" category="Equipment" Tags="smallitem,cuttingequipment,tool" cargocontaineridentifier="metalcrate" description="" Scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="divingcab" minamount="1" maxamount="3" spawnprobability="1" />
     <PreferredContainer primary="engcab" minamount="1" maxamount="2" spawnprobability="1" />
     <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab" minamount="0" maxamount="1" spawnprobability="0.2" />
     <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.25" />
     <Deconstruct time="10">
-      <Item identifier="DissimilarIron" />
-      <Item identifier="DissimilarIron" />
-      <Item identifier="KetoneAgglutination" />
+      <Item identifier="EA_DissimilarIron" />
+      <Item identifier="EA_DissimilarIron" />
+      <Item identifier="EA_KetoneAgglutination" />
       <Item identifier="EA_CarbonBlock" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="20">
       <RequiredSkill identifier="mechanical" level="40" />
-      <RequiredItem identifier="DissimilarIron" />
-      <RequiredItem identifier="DissimilarIron" />
-      <RequiredItem identifier="KetoneAgglutination" />
+      <RequiredItem identifier="EA_DissimilarIron" />
+      <RequiredItem identifier="EA_DissimilarIron" />
+      <RequiredItem identifier="EA_KetoneAgglutination" />
       <RequiredItem identifier="EA_CarbonBlock" />
     </Fabricate>
     <InventoryIcon texture="Mods/Europa Arknights/Items/Equipments/Guns.png" sourcerect="260,10,262,138" origin="0.5,0.5" />
@@ -290,10 +290,10 @@
       <LightComponent LightColor="0.8,0.7,1.0,1.0" Flicker="0.5">
         <sprite texture="Content/Items/Electricity/lightsprite.png" origin="0.5,0.5" />
       </LightComponent>
-      <RequiredItems identifier="EA_EA_LiquidOriginiumTank,oxygensource,weldingtoolfuel" type="Contained" msg="ItemMsgOxygenTankRequired" />
+      <RequiredItems identifier="EA_LiquidOriginiumTank,oxygensource,weldingtoolfuel" type="Contained" msg="ItemMsgOxygenTankRequired" />
     </RepairTool>
     <ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="0,-39" containedspritedepth="0.56" containedstateindicatorstyle="tank">
-      <Containable items="EA_EA_LiquidOriginiumTank,weldingtoolfuel,oxygensource" />
+      <Containable items="EA_LiquidOriginiumTank,weldingtoolfuel,oxygensource" />
     </ItemContainer>
     <aitarget sightrange="2000" soundrange="500" fadeouttime="3" />
     <Quality>
@@ -314,13 +314,13 @@
       <Price locationtype="mine" multiplier="1.25" sold="false" />
     </Price>
     <Deconstruct time="10">
-      <Item identifier="DissimilarIron" />
-      <Item identifier="Originiums" mincondition="0.5" maxcondition="0.5" />
+      <Item identifier="EA_DissimilarIron" />
+      <Item identifier="EA_Originiums" mincondition="0.5" maxcondition="0.5" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="20">
       <RequiredSkill identifier="weapons" level="60" />
-      <RequiredItem identifier="DissimilarIron" />
-      <RequiredItem identifier="Originiums" />
+      <RequiredItem identifier="EA_DissimilarIron" />
+      <RequiredItem identifier="EA_Originiums" />
     </Fabricate>
     <InventoryIcon texture="Mods/Europa Arknights/Items/Equipments/Explosives.png" sourcerect="150,0,120,190" origin="0.5,0.5" />
     <Sprite texture="Explosives.png" sourcerect="150,0,120,190" depth="0.55" origin="0.5,0.5" />
@@ -362,7 +362,7 @@
     <Fabricate suitablefabricators="fabricator" requiredtime="20">
       <RequiredSkill identifier="weapons" level="50" />
       <RequiredItem identifier="c4block" />
-      <RequiredItem identifier="SeminaturalSolvent" />
+      <RequiredItem identifier="EA_SeminaturalSolvent" />
       <RequiredItem identifier="EA_LiquidOriginiumTank" />
     </Fabricate>
     <Throwable characterusable="true" slots="Any,RightHand,LeftHand" canbecombined="true" removeoncombined="true" throwforce="6.0" aimpos="35,-10" msg="ItemMsgPickUpSelect">
