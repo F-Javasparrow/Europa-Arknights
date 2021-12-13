@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Items>
-  <Item name="源石蚀刻弹匣" identifier="EA_OriginiumMagazine" scale="0.25" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,OriginiumMagazine" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="OriginiumAR" minamount="1" maxamount="1" spawnprobability="1"/>
+  <Item name="源石蚀刻弹匣" identifier="EA_OriginiumMagazine" scale="0.25" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,EA_OriginiumMagazine" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="EA_OriginiumAR" minamount="1" maxamount="1" spawnprobability="1"/>
 
     <Price baseprice="100" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.5" sold="false"/>
@@ -14,11 +14,11 @@
     <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="magnesium" />
-      <RequiredItem identifier="Originiums" />
+      <RequiredItem identifier="EA_Originiums" />
       <RequiredItem identifier="steel" />
     </Fabricate>
     <Deconstruct time="10">
-      <Item identifier="Originiums" copycondition="true"/>
+      <Item identifier="EA_Originiums" copycondition="true"/>
       <Item identifier="steel" copycondition="true"/>
     </Deconstruct>
 
@@ -84,9 +84,9 @@
     <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true">
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="magnesium" />
-      <RequiredItem identifier="Originiums" />
-      <RequiredItem identifier="ActiveAgent" />
-      <RequiredItem identifier="DissimilarIron" />
+      <RequiredItem identifier="EA_Originiums" />
+      <RequiredItem identifier="EA_ActiveAgent" />
+      <RequiredItem identifier="EA_DissimilarIron" />
     </Fabricate>
     <Deconstruct time="10">
       <Item identifier="steel" />

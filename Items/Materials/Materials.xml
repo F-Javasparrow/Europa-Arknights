@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Items>
-  <Item name="至纯源石" identifier="Originiums" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light">
+  <Item name="至纯源石" identifier="EA_Originiums" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light">
 
     <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
     <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.01"/>
@@ -11,10 +11,10 @@
 
     <Fabricate suitablefabricators="fabricator" requiredtime="20">
       <RequiredSkill identifier="mechanical" level="20" />
-      <RequiredItem identifier="OriginiumsOre" />
-      <RequiredItem identifier="OriginiumsOre" />
-      <RequiredItem identifier="OriginiumsOre" />
-      <RequiredItem identifier="OriginiumsOre" />
+      <RequiredItem identifier="EA_OriginiumsOre" />
+      <RequiredItem identifier="EA_OriginiumsOre" />
+      <RequiredItem identifier="EA_OriginiumsOre" />
+      <RequiredItem identifier="EA_OriginiumsOre" />
     </Fabricate>
 
     <InventoryIcon texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="0,0,125,125" />
@@ -30,7 +30,7 @@
     <LightComponent range="150.0" lightcolor="255,144,56,111" IsOn="true" castshadows="false" allowingameediting="false" pulseamount="0.9" pulsefrequency="0.25"/>
   </Item>
 
-  <Item name="源石矿簇" identifier="OriginiumsOre" category="Material" maxstacksize="8" Tags="smallitem,ore" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light">
+  <Item name="源石矿簇" identifier="EA_OriginiumsOre" category="Material" maxstacksize="8" Tags="smallitem,ore" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light">
     <InventoryIcon texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="10,140,100,110" />
     <Sprite texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="10,140,100,110" depth="0.55" origin="0.5,0.5" />
     <DecorativeSprite texture="Mods/Europa Arknights/Items/Materials/Materials.png" depth="0.4" sourcerect="10,140,100,110" offset="0,-40" randomrotation="-20,20" origin="0.5,0.5" scale="1"/>
@@ -61,7 +61,7 @@
     <LightComponent range="150.0" lightcolor="255,144,56,111" IsOn="true" castshadows="false" allowingameediting="false" pulseamount="0.9" pulsefrequency="0.25"/>
   </Item>
 
-  <Item name="固源岩" identifier="OriginiumRock" category="Material" maxstacksize="8" Tags="smallitem,ore" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+  <Item name="固源岩" identifier="EA_OriginiumRock" category="Material" maxstacksize="8" Tags="smallitem,ore" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
 
     <PreferredContainer secondary="locker" />
     <PreferredContainer primary="mineralcontainer" spawnprobability="0.1" />
@@ -88,7 +88,7 @@
     <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="5.0" attachable="true" reattachable="false" />
   </Item>
 
-  <Item name="异铁" identifier="DissimilarIron" category="Material" maxstacksize="8" Tags="smallitem,ore" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+  <Item name="异铁" identifier="EA_DissimilarIron" category="Material" maxstacksize="8" Tags="smallitem,ore" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
 
     <PreferredContainer secondary="locker" />
     <PreferredContainer primary="mineralcontainer" spawnprobability="0.1" />
@@ -116,7 +116,7 @@
     <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="5.0" attachable="true" reattachable="false" />
   </Item>
 
-  <Item name="酮凝集" identifier="KetoneAgglutination" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+  <Item name="酮凝集" identifier="EA_KetoneAgglutination" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
     <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="3" spawnprobability="0.06"/>
 
@@ -138,7 +138,7 @@
     </Holdable>
   </Item>
 
-  <Item name="富酮植物" identifier="KetonePlant" category="Material" maxstacksize="8" Tags="smallitem,plant" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
+  <Item name="富酮植物" identifier="EA_KetonePlant" category="Material" maxstacksize="8" Tags="smallitem,plant" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
 
     <Price baseprice="100" soldeverywhere="false">
       <Price locationtype="outpost" multiplier="1.3" sold="false"/>
@@ -149,8 +149,8 @@
     </Price>
 
     <Deconstruct time="10">
-      <Item identifier="KetoneAgglutination" />
-      <Item identifier="KetoneAgglutination" />
+      <Item identifier="EA_KetoneAgglutination" />
+      <Item identifier="EA_KetoneAgglutination" />
       <Item identifier="organicfiber" />
     </Deconstruct>
 
@@ -170,7 +170,7 @@
     </Holdable>
   </Item>
 
-  <Item name="源石感染血液" identifier="OriginiumInfectsBlood" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+  <Item name="源石感染血液" identifier="EA_OriginiumInfectsBlood" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
 
     <Price baseprice="65" soldeverywhere="false">
@@ -180,16 +180,16 @@
 
     <Fabricate suitablefabricators="fabricator" requiredtime="5">
       <RequiredSkill identifier="mechanical" level="20" />
-      <RequiredItem identifier="OriginiumInfectsBloodsample" />
-      <RequiredItem identifier="OriginiumInfectsBloodsample" />
-      <RequiredItem identifier="OriginiumInfectsBloodsample" />
-      <RequiredItem identifier="OriginiumInfectsBloodsample" />
+      <RequiredItem identifier="EA_OriginiumInfectsBloodsample" />
+      <RequiredItem identifier="EA_OriginiumInfectsBloodsample" />
+      <RequiredItem identifier="EA_OriginiumInfectsBloodsample" />
+      <RequiredItem identifier="EA_OriginiumInfectsBloodsample" />
     </Fabricate>
     <Deconstruct time="5">
-      <Item identifier="OriginiumInfectsBloodsample" copycondition="true"/>
-      <Item identifier="OriginiumInfectsBloodsample" copycondition="true"/>
-      <Item identifier="OriginiumInfectsBloodsample" copycondition="true"/>
-      <Item identifier="OriginiumInfectsBloodsample" copycondition="true"/>
+      <Item identifier="EA_OriginiumInfectsBloodsample" copycondition="true"/>
+      <Item identifier="EA_OriginiumInfectsBloodsample" copycondition="true"/>
+      <Item identifier="EA_OriginiumInfectsBloodsample" copycondition="true"/>
+      <Item identifier="EA_OriginiumInfectsBloodsample" copycondition="true"/>
     </Deconstruct>
 
     <InventoryIcon texture="Mods/Europa Arknights/Items/Materials/Materials2.png" sourcerect="10,0,90,160" />
@@ -204,7 +204,7 @@
     </Holdable>
   </Item>
 
-  <Item name="源石感染血样" identifier="OriginiumInfectsBloodsample" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+  <Item name="源石感染血样" identifier="EA_OriginiumInfectsBloodsample" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
     <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="3" spawnprobability="0.06"/>
 
@@ -225,7 +225,7 @@
     </Holdable>
   </Item>
 
-  <Item name="源石虫组织样本" identifier="InfectedTissueSample" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+  <Item name="源石虫组织样本" identifier="EA_InfectedTissueSample" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
 
     <Price baseprice="50" soldeverywhere="false">
@@ -234,8 +234,8 @@
     </Price>
 
     <Deconstruct time="15">
-      <Item identifier="OriginiumInfectsBloodsample" copycondition="true"/>
-      <Item identifier="OriginiumRock" copycondition="true"/>
+      <Item identifier="EA_OriginiumInfectsBloodsample" copycondition="true"/>
+      <Item identifier="EA_OriginiumRock" copycondition="true"/>
     </Deconstruct>
 
 
@@ -253,7 +253,7 @@
   
   <!-- Compounds ************************************************************************************************ -->
 
-  <Item name="D32钢" identifier="D32" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light">
+  <Item name="D32钢" identifier="EA_D32" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light">
 
     <Price baseprice="200" soldeverywhere="false">
       <Price locationtype="military" multiplier="1.5" sold="false"/>
@@ -262,9 +262,9 @@
 
     <Fabricate suitablefabricators="fabricator" requiredtime="60">
       <RequiredSkill identifier="mechanical" level="40" />
-      <RequiredItem identifier="DissimilarIron" />
-      <RequiredItem identifier="KetoneAgglutination" />
-      <RequiredItem identifier="SeminaturalSolvent" />
+      <RequiredItem identifier="EA_DissimilarIron" />
+      <RequiredItem identifier="EA_KetoneAgglutination" />
+      <RequiredItem identifier="EA_SeminaturalSolvent" />
     </Fabricate>
 
     <InventoryIcon texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="10,265,125,125" />
