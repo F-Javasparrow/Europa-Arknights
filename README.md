@@ -20,16 +20,6 @@
     添加了一个新阵营
     添加了2个职业与2条天赋树(存在暂时无法解决的bug)
     添加了3种生物群系与1种新洞穴
-### 更新计划:
-    [Complete]    添加完善的怪物AI 
-    [Complete]    添加天赋树内的新物品
-    [Complete]    添加三种新群系
-    [Processing]  优化矿石病相关的机制
-    [Processing]  添加更多与新阵营相关的任务
-    [Postpone]    添加一种新遗迹
-    [Processing]  添加更多怪物
-    [Processing]  添加更多语言支持
-    [Postpone]    将原版的人类替换成泰拉人 ?
 ### 以下是经过兼容性测试的MOD列表:
     https://steamcommunity.com/sharedfiles/filedetails/?id=2678805329
 ### 警告:此MOD可能与某些生物群系MOD相冲突
