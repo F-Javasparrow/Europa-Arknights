@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Europa Arknights" path="Mods/Europa Arknights/filelist.xml" corepackage="false" gameversion="0.15.13.0" steamworkshopid="2673730671" installtime="1639344715">
+<contentpackage name="Europa Arknights" path="Mods/Europa Arknights/filelist.xml" corepackage="false" gameversion="0.15.13.0" steamworkshopid="2673730671" installtime="1639398563">
   <Character file="Mods/Europa Arknights/Characters/Infected_001/Infected_001.xml" />
   <Character file="Mods/Europa Arknights/Characters/infected_002/Infected_002.xml" />
   <Character file="Mods/Europa Arknights/Characters/infected_003/Infected_003.xml" />
@@ -13,18 +13,18 @@
   <Item file="Mods/Europa Arknights/Items/Equipments/Weapons.xml" />
   <Item file="Mods/Europa Arknights/Items/Equipments/Ammo.xml" />
   <Item file="Mods/Europa Arknights/Items/Campaign/Campaign.xml" />
-
-  <Jobs file="Mods/Europa Arknights/Jobs.xml" />
-  <TalentTrees file="Mods/Europa Arknights/Talent/Talenttree.xml" />
-  <Talents file="Mods/Europa Arknights/Talent/OripathyScholar/TalentsScholar.xml" />
-  <Talents file="Mods/Europa Arknights/Talent/AbyssalHunter/TalentsHunter.xml" />
-<!-- - - - - -->
   <Item file="Mods/Europa Arknights/Characters/infected_003/infected_003lavaBall.xml" />
   <Afflictions file="Mods/Europa Arknights/Afflictions/Afflictions.xml" />
   <Afflictions file="Mods/Europa Arknights/Talent/OripathyScholar/ScholarAfflictions.xml" />
   <Afflictions file="Mods/Europa Arknights/Talent/AbyssalHunter/HunterAfflictions.xml" />
   <Missions file="Mods/Europa Arknights/Missions/Missions.xml" />
   <Factions file="Mods/Europa Arknights/Factions.xml" />
+<!--
+  <Jobs file="Mods/Europa Arknights/Jobs.xml" />
+  <TalentTrees file="Mods/Europa Arknights/Talent/TalentTrees.xml" />
+  <Talents file="Mods/Europa Arknights/Talent/OripathyScholar/TalentsScholar.xml" />
+  <Talents file="Mods/Europa Arknights/Talent/AbyssalHunter/TalentsHunter.xml" />
+-->
   <LocationTypes file="Mods/Europa Arknights/UI/locationTypes.xml" />
   <LevelGenerationParameters file="Mods/Europa Arknights/Map/Biomes/Biomes.xml" />
   <LevelGenerationParameters file="Mods/Europa Arknights/Map/Biomes/NaturalDisasterArea/NaturalDisasterArea.xml" />

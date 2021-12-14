@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="灰毫盾" identifier="EA_Ashiock_shield" aliases="small shield, small riot shield" scale="0.4" category="Equipment" tags="weapon" impactsoundtag="impact_metal_light" damagedbyprojectiles="true" damagedbyexplosions="true" projectilesdamagemultiplier="0.02" explosiondamagemultiplier="0.03" depth="0.1">
+    <!--<Price locationtype="Military" buyprice="160" />
+    <Price locationtype="City" buyprice="200" />
+    <Price locationtype="Outpost" buyprice="220" />-->
+    <Price baseprice="5000" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.25" sold="false" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="1" minavailable="2" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="titaniumaluminiumalloy" />
+    </Deconstruct>
+    <!--<Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="mechanical" level="50" />
+      <RequiredItem identifier="titaniumaluminiumalloy" />
+    </Fabricate>-->
+    <InventoryIcon texture="Mods/灰毫武器/Items/Ashlock.png" sourcerect="819,121,173,339" origin="0.51081675,0.48251927" depth="0.1" />
+    <Sprite texture="Mods/灰毫武器/Items/Ashlock.png" sourcerect="819,122,171,335" origin="0.5372524,0.48181418" depth="0.55" />
+    <Body width="64" height="376" density="30" />
+    <Holdable slots="Any,LeftHand" aimpos="110,-40" holdpos="105,-30" handle1="-7,22" controlpose="true" blocksplayers="true" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.7" setvalue="true" />
+      <!--<StatusEffect type="Always" target="This" Condition="100" setvalue="true" />-->
+      <StatusEffect type="OnBroken" target="This" disabledeltatime="true">
+        <particleemitter particle="shrapnel" particleamount="10" velocitymin="50" velocitymax="300" anglemin="0" anglemax="360" scalemin="1" scalemax="2" highqualitycollisiondetection="False" />
+        <sound file="Content/Items/Door/DoorBreak1.ogg" selectionmode="Random" range="3000" />
+        <sound file="Content/Items/Door/DoorBreak2.ogg" range="3000" />
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="灰毫" identifier="EA_Ashiock_shotgun" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,pistolitem" Scale="0.5" impactsoundtag="impact_metal_light">
+    <Price baseprice="5000" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="0.9" minavailable="3" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+      <Item identifier="titaniumaluminiumalloy" />
+    </Deconstruct>
+    <InventoryIcon texture="Mods/灰毫武器/Items/Ashlock.png" sourcerect="690,2,335,113" origin="0.43998235,0.43643036" />
+    <Sprite texture="Mods/灰毫武器/Items/Ashlock.png" sourcerect="688,-1,339,116" depth="0.55" origin="0.20330463,0.47111383" />
+    <Body width="180" height="45" density="50" />
+    <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="100,-10" holdangle="0" handle1="-90,0"	msg="ItemMsgPickUpSelect" />
+    <RangedWeapon barrelpos="265,0" spread="1" unskilledspread="10" combatPriority="80" reload="1.7" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+      <Sound file="Content/Items/Weapons/ShotgunShot1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="Content/Items/Weapons/ShotgunShot2.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/Weapons/ShotgunShot3.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/Weapons/ShotgunShot4.ogg" type="OnUse" range="3000" />
+      <StatusEffect type="OnUse">
+        <Explosion range="150.0" force="2.5" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
+      </StatusEffect>
+      <!-- Cocking sound, delayed by 1.0 seconds. -->
+      <StatusEffect type="OnUse" delay="1.0">
+        <Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" />
+      </StatusEffect>
+      <RequiredItems items="shotgunammo,handcannonround" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="60" />
+    </RangedWeapon>
+    <ItemContainer capacity="2" maxstacksize="8" itempos="27,10" iteminterval="0,-4" hideitems="true" containedstateindicatorstyle="bullet">
+      <Containable items="shotgunammo,handcannonround" />
+    </ItemContainer>
+    <aitarget sightrange="3000" soundrange="5000" fadeouttime="5" />
+    <Quality>
+      <QualityStat stattype="AttackMultiplier" value="0.1" />
+    </Quality>
+  </Item>
+</Items>
