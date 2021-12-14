@@ -52,22 +52,50 @@
   <entityname.EA_OriginiumMagazine>源石蚀刻弹匣</entityname.EA_OriginiumMagazine>
   <entityname.EA_LiquidOriginiumTank>液态源石罐</entityname.EA_LiquidOriginiumTank>
   <!-- 材料 -->
-  <entityname.Originiums>至纯源石</entityname.Originiums>
-  <entityname.OriginiumsOre>源石矿簇</entityname.OriginiumsOre>
-  <entityname.OriginiumRock>固源岩</entityname.OriginiumRock>
-  <entityname.DissimilarIron>异铁</entityname.DissimilarIron>
-  <entityname.KetoneAgglutination>酮凝集</entityname.KetoneAgglutination>
-  <entityname.KetonePlant>富酮植物</entityname.KetonePlant>
-  <entityname.OriginiumInfectsBlood>源石感染血液</entityname.OriginiumInfectsBlood>
-  <entityname.OriginiumInfectsBloodsample>源石感染血样</entityname.OriginiumInfectsBloodsample>
-  <entityname.InfectedTissueSample>源石虫组织样本</entityname.InfectedTissueSample>
-  <entityname.D32>D32钢</entityname.D32>
+  <entityname.EA_Originiums>至纯源石</entityname.EA_Originiums>
+  <entitydescription.EA_Originiums>在工业中用量巨大的源石结晶，但有着较高的提取难度。是世界的主要能源类精加工产物，同时也是几乎所有源石技艺得以施展的根本。如今，即使“它会传播绝症”的传言甚嚣尘上，也依旧没多少人能抵挡住它的诱惑。</entitydescription.EA_Originiums>
+  <entityname.EA_OriginiumsOre>源石矿簇</entityname.EA_OriginiumsOre>
+  <entitydescription.EA_OriginiumsOre>从遭受重度污染的地区回收的源石碎块，存在高感染威胁及一定突变概率，是哥伦比亚疾病防控中心毒性数据库重点提及的危险物质。</entitydescription.EA_OriginiumsOre>
+  <entityname.EA_OriginiumRock>固源岩</entityname.EA_OriginiumRock>
+  <entitydescription.EA_OriginiumRock>从地表开采出的岩石固块，可用于多种强化场合，内含有密集的微孔，常作为源石气体分解物的吸附剂。多用于防护夹层。</entitydescription.EA_OriginiumRock>
+  <entityname.EA_DissimilarIron>异铁</entityname.EA_DissimilarIron>
+  <entitydescription.EA_DissimilarIron>大规模金属原料加工的副产物，因其可塑性强、难以被氧化的特性，常被用于材料金属熔炼与阶段性再处理。</entitydescription.EA_DissimilarIron>
+  <entityname.EA_KetoneAgglutination>酮凝集</entityname.EA_KetoneAgglutination>
+  <entitydescription.EA_KetoneAgglutination>经过特殊处理后产出的少量多态酮制剂，易于闭合的分子构造能将原本繁杂的处理工艺简化为单纯的化学反应，当然，也需要一定的技术支持。</entitydescription.EA_KetoneAgglutination>
+  <entityname.EA_KetonePlant>富酮植物</entityname.EA_KetonePlant>
+  <entitydescription.EA_OriginiumRock>一种富含非单酮的海底植物</entitydescription.EA_OriginiumRock>
+  <entityname.EA_Polyester>聚酸酯</entityname.EA_Polyester>
+  <entitydescription.EA_Polyester>近代工业中至关重要的材料之一，许多现代产品的诞生都归功于它的出现。当然了，这只是原料，几乎派不上什么大用场。</entitydescription.EA_Polyester>
+  <entityname.EA_LightManganeseOre>轻锰矿</entityname.EA_LightManganeseOre>
+  <entitydescription.EA_LightManganeseOre>用以产出极为泛用的工业催化剂的金属矿物。再加工过程十分复杂，因不规范操作而导致事故的例子比比皆是。</entitydescription.EA_LightManganeseOre>
+
+  <entityname.EA_OriginiumInfectsBlood>源石感染血液</entityname.EA_OriginiumInfectsBlood>
+  <entitydescription.EA_OriginiumRock></entitydescription.OriginiumRock>
+  <entityname.EA_OriginiumInfectsBloodsample>源石感染血样</entityname.EA_OriginiumInfectsBloodsample>
+  <entitydescription.EA_OriginiumRock></entitydescription.OriginiumRock>
+  <entityname.InfectedTissueSample>源石虫组织样本</entityname.EA_InfectedTissueSample>
+
+  <entityname.EA_D32>D32钢</entityname.EA_D32>
+  <entitydescription.EA_OriginiumRock>一种富含非单酮的海底植物</entitydescription.EA_OriginiumRock>
   <entityname.EA_CarbonBlock>碳素块</entityname.EA_CarbonBlock>
+  <entitydescription.EA_OriginiumRock>一种富含非单酮的海底植物</entitydescription.EA_OriginiumRock>
   <entityname.SeminaturalSolvent>半自然溶剂</entityname.SeminaturalSolvent>
+  <entitydescription.EA_OriginiumRock>一种富含非单酮的海底植物</entitydescription.EA_OriginiumRock>
   <entityname.ActiveAgent>活性制剂</entityname.ActiveAgent>
+  <entitydescription.EA_OriginiumRock>一种富含非单酮的海底植物</entitydescription.EA_OriginiumRock>
+  <entityname.EA_IncandescentAlloy>炽合金</entityname.EA_IncandescentAlloy>
+  <entitydescription.EA_IncandescentAlloy>一种富含非单酮的海底植物</entitydescription.EA_IncandescentAlloy>
+  <entityname.EA_PolymerGel>聚合凝胶</entityname.EA_PolymerGel>
+  <entitydescription.EA_PolymerGel>以凝胶为源材料，历经大量实验与反复测试诞生的人工材料。即使是在高压力环境中也能保持性质的稳定，在少数高新项目中有着重要地位。</entitydescription.EA_PolymerGel>
+  <entityname.EA_TorsionAlcohol>白马醇</entityname.EA_TorsionAlcohol>
+  <entitydescription.EA_TorsionAlcohol>优秀的化工中介体，常在两种形状间转换以储存和放出传导物质。液化后与酒精在某些性质上十分相似，时常导致整个工作间醉醺醺的。</entitydescription.EA_TorsionAlcohol>
+  <!-- 药物 -->
   <entityname.OripathyResistanceFlask>源石抵抗合剂</entityname.OripathyResistanceFlask>
+  <entitydescription.EA_OriginiumRock>一种富含非单酮的海底植物</entitydescription.EA_OriginiumRock>
   <entityname.SanityFlask>理智合剂</entityname.SanityFlask>
+  <entitydescription.EA_OriginiumRock>一种富含非单酮的海底植物</entitydescription.EA_OriginiumRock>
   <entityname.OriginiumAnalysisFluid>源石解析液</entityname.OriginiumAnalysisFluid>
+  <entitydescription.EA_OriginiumRock>一种富含非单酮的海底植物</entitydescription.EA_OriginiumRock>
   <!-- 货箱 -->
   <entityname.EA_milCampaign>密封军事用品货箱</entityname.EA_milCampaign>
   <entitydescription.EA_milCampaign>低价买入，高价出售。将这些箱运送到军事卫所以获取每箱 400 mk 利润，但要切记将它们放在货架上，否则它们会随时间恶化。 </entitydescription.EA_milCampaign>
