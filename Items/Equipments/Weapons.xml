@@ -73,7 +73,7 @@
     </Quality>
     <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
   </Item>
-  <Item name="史尔特尔" identifier="EA_Surtr" aliases="" scale="0.20" category="Equipment" tags="smallitem,weapon" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_heavy">
+  <Item name="史尔特尔" identifier="EA_Surtr" aliases="" scale="0.20" category="Equipment" tags="weapon,gunsmith" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_heavy">
     <Deconstruct time="10">
       <Item identifier="EA_D32" />
       <Item identifier="EA_DissimilarIron" />
@@ -111,58 +111,19 @@
       <QualityStat stattype="AttackMultiplier" value="0.1" />
     </Quality>
   </Item>
-  <Item name="灰毫" identifier="EA_AshiockShotgun" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,pistolitem" Scale="0.5" impactsoundtag="impact_metal_light">
-    <Deconstruct time="10">
-      <Item identifier="EA_DissimilarIron" />
-      <Item identifier="EA_DissimilarIron" />
-    </Deconstruct>
-    <InventoryIcon texture="Mods/Europa Arknights/Items/Equipments/Ashlock.png" sourcerect="690,2,335,113" origin="0.43998235,0.43643036" />
-    <Sprite texture="Mods/Europa Arknights/Items/Equipments/Ashlock.png" sourcerect="688,-1,339,116" depth="0.55" origin="0.20330463,0.47111383" />
-    <Body width="180" height="45" density="50" />
-    <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="100,-10" holdangle="0" handle1="-90,0"	msg="ItemMsgPickUpSelect" />
-    <RangedWeapon barrelpos="265,0" spread="1" unskilledspread="10" combatPriority="80" reload="1.7" drawhudwhenequipped="true" crosshairscale="0.2">
-      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
-      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-      <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="Content/Items/Weapons/ShotgunShot1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-      <Sound file="Content/Items/Weapons/ShotgunShot2.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/Weapons/ShotgunShot3.ogg" type="OnUse" range="3000" />
-      <Sound file="Content/Items/Weapons/ShotgunShot4.ogg" type="OnUse" range="3000" />
-      <StatusEffect type="OnUse">
-        <Explosion range="150.0" force="2.5" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
-      </StatusEffect>
-      <StatusEffect type="OnUse" delay="1.0">
-        <Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-        <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" />
-        <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" />
-      </StatusEffect>
-      <RequiredItems items="shotgunammo,handcannonround" type="Contained" msg="ItemMsgAmmoRequired" />
-      <RequiredSkill identifier="weapons" level="60" />
-    </RangedWeapon>
-    <ItemContainer capacity="2" maxstacksize="8" itempos="27,10" iteminterval="0,-4" hideitems="true" containedstateindicatorstyle="bullet">
-      <Containable items="shotgunammo,handcannonround" />
-    </ItemContainer>
-    <aitarget sightrange="3000" soundrange="5000" fadeouttime="5" />
-    <Quality>
-      <QualityStat stattype="AttackMultiplier" value="0.1" />
-    </Quality>
-  </Item>
-
   <Item name="灰毫盾" identifier="EA_AshiockShield" aliases="" scale="0.4" category="Equipment" tags="weapon" impactsoundtag="impact_metal_light" damagedbyprojectiles="true" damagedbyexplosions="true" projectilesdamagemultiplier="0.02" explosiondamagemultiplier="0.03" depth="0.1">
     <Deconstruct time="10">
       <Item identifier="EA_DissimilarIron" />
       <Item identifier="EA_Polyester" />
       <Item identifier="EA_Polyester" />
     </Deconstruct>
-      <Fabricate suitablefabricators="fabricator" requiredtime="10">
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
       <RequiredSkill identifier="mechanical" level="50" />
       <RequiredItem identifier="titaniumaluminiumalloy" />
     </Fabricate>
-
     <InventoryIcon texture="Mods/Europa Arknights/Items/Equipments/Ashlock.png" sourcerect="819,121,173,339" origin="0.51081675,0.48251927" depth="0.1" />
     <Sprite texture="Mods/Europa Arknights/Items/Equipments/Ashlock.png" sourcerect="819,122,171,335" origin="0.5372524,0.48181418" depth="0.55" />
     <Body width="64" height="376" density="30" />
-
     <Holdable slots="Any,LeftHand" aimpos="110,-40" holdpos="105,-30" handle1="-7,22" controlpose="true" blocksplayers="true" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.7" setvalue="true" />
       <StatusEffect type="Always" target="This" Condition="100" setvalue="true" />
@@ -174,7 +135,6 @@
       </StatusEffect>
     </Holdable>
   </Item>
-
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <Item name="源石铳" identifier="EA_OriginiumAR" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith" Scale="0.3" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="weaponholder" spawnprobability="0.1" />
@@ -228,7 +188,11 @@
     <ItemContainer autofill="True" capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
       <Containable identifiers="EA_OriginiumMagazine" />
     </ItemContainer>
-    <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
+    <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />\
+    <Quality>
+      <QualityStat stattype="AttackSpeedMultiplier" value="0.1" />
+      <QualityStat stattype="AttackMultiplier" value="0.1" />
+    </Quality>
   </Item>
   <Item name="试验型源石聚能步枪" identifier="EA_ExperimentalShapedEnergyRifle" category="Equipment" tags="mediumitem,weapon,gun,gunsmith" Scale="0.35" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="wrecksecurearmcab,wreckarmcab,wreckshuttlecrate" minamount="0" maxamount="1" spawnprobability="0.05" />
@@ -245,8 +209,8 @@
       <Item identifier="EA_KetoneAgglutination" />
       <Item identifier="EA_Originiums" />
     </Deconstruct>
-    <InventoryIcon texture="Mods/Europa Arknights/Items/Equipments/Guns.png" sourcerect="10,20,250,110" />
-    <Sprite texture="Guns.png" sourcerect="10,20,250,110" depth="0.55" />
+    <InventoryIcon texture="Mods/Europa Arknights/Items/Equipments/Guns.png" sourcerect="10,20,250,110" origin="0.5,0.5" />
+    <Sprite texture="Guns.png" sourcerect="10,20,250,110" depth="0.55" origin="0.5,0.5" />
     <Body width="250" height="100" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="45,-10" aimpos="40,10" handle1="4,-28" handle2="102,-17" holdangle="-40" msg="ItemMsgPickUpSelect" />
     <RangedWeapon barrelpos="60,10" spread="1" unskilledspread="1" reload="0.2" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
@@ -363,6 +327,82 @@
     <Quality>
       <QualityStat stattype="RepairToolStructureDamageMultiplier" value="0.1" />
       <QualityStat stattype="RepairToolDeattachTimeMultiplier" value="0.1" />
+    </Quality>
+  </Item>
+  <Item name="灰毫" identifier="EA_AshiockShotgun" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,pistolitem" Scale="0.5" impactsoundtag="impact_metal_light">
+    <Deconstruct time="10">
+      <Item identifier="EA_D32" />
+      <Item identifier="EA_SeminaturalSolvent" />
+      <Item identifier="EA_DissimilarIron" />
+      <Item identifier="EA_DissimilarIron" />
+    </Deconstruct>
+    <InventoryIcon texture="Mods/Europa Arknights/Items/Equipments/Ashlock.png" sourcerect="690,2,335,113" origin="0.43998235,0.43643036" />
+    <Sprite texture="Mods/Europa Arknights/Items/Equipments/Ashlock.png" sourcerect="688,-1,339,116" depth="0.55" origin="0.20330463,0.47111383" />
+    <Body width="180" height="45" density="50" />
+    <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="100,-10" holdangle="0" handle1="-90,0" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon barrelpos="265,0" spread="1" unskilledspread="10" combatPriority="80" reload="1.7" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+      <Sound file="Content/Items/Weapons/ShotgunShot1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="Content/Items/Weapons/ShotgunShot2.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/Weapons/ShotgunShot3.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/Weapons/ShotgunShot4.ogg" type="OnUse" range="3000" />
+      <StatusEffect type="OnUse">
+        <Explosion range="150.0" force="2.5" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" delay="1.0">
+        <Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" />
+      </StatusEffect>
+      <RequiredItems items="shotgunammo,handcannonround" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="60" />
+    </RangedWeapon>
+    <ItemContainer capacity="2" maxstacksize="3" itempos="27,10" iteminterval="0,-4" hideitems="true" containedstateindicatorstyle="bullet">
+      <Containable items="shotgunammo,handcannonround" />
+    </ItemContainer>
+    <aitarget sightrange="3000" soundrange="5000" fadeouttime="5" />
+    <Quality>
+      <QualityStat stattype="AttackMultiplier" value="0.1" />
+    </Quality>
+  </Item>
+  <Item name="重弩" identifier="EA_SchwarzCrossbow" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,pistolitem" Scale="0.10" impactsoundtag="impact_metal_light">
+    <Deconstruct time="10">
+      <Item identifier="EA_D32" />
+      <Item identifier="EA_DissimilarIron" />
+      <Item identifier="EA_DissimilarIron" />
+    </Deconstruct>
+    <InventoryIcon texture="Mods/Europa Arknights/Items/Equipments/Guns.png" sourcerect="452,152,554,229" origin="0.43,0.43" />
+    <Sprite texture="Mods/Europa Arknights/Items/Equipments/Guns.png" sourcerect="452,153,552,227" depth="0.55" origin="0.37,0.60" />
+    <Body width="30" height="10" density="50" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="false" aimpos="50,-10" holdangle="0" handle1="-90,0" handle2="10,0" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon barrelpos="265,20" spread="1" unskilledspread="10" combatPriority="80" reload="1.5" maxchargetime="1" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+      <Sound file="Content/Items/Weapons/ShotgunShot1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+      <Sound file="Content/Items/Weapons/ShotgunShot2.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/Weapons/ShotgunShot3.ogg" type="OnUse" range="3000" />
+      <Sound file="Content/Items/Weapons/ShotgunShot4.ogg" type="OnUse" range="3000" />
+      <StatusEffect type="OnUse">
+        <Explosion range="150.0" force="2.5" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" delay="1.0">
+        <Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" />
+        <Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" />
+      </StatusEffect>
+      <RequiredItems items="harpoonammo" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="60" />
+    </RangedWeapon>
+    <ItemContainer capacity="1" maxstacksize="4" itempos="27,10" iteminterval="0,-4" hideitems="true" containedstateindicatorstyle="bullet">
+      <Containable items="harpoonammo" />
+    </ItemContainer>
+    <aitarget sightrange="3000" soundrange="5000" fadeouttime="5" />
+    <Quality>
+      <QualityStat stattype="AttackSpeedMultiplier" value="0.2" />
+      <QualityStat stattype="AttackMultiplier" value="0.2" />
     </Quality>
   </Item>
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->

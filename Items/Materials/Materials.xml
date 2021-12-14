@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
-  <Item name="至纯源石" identifier="EA_Originiums" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light">
+  <Item name="至纯源石" identifier="EA_Originiums" category="Material" maxstacksize="8" Tags="smallitem,reactorfuel" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1" />
     <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.01" />
     <Price baseprice="1000" soldeverywhere="false">
@@ -36,11 +36,11 @@
     <PreferredContainer secondary="locker" />
     <PreferredContainer primary="mineralcontainer" spawnprobability="0.1" />
     <LevelResource deattachduration="8" randomoffsetfromwall="40">
-      <Commonness commonness="0.30" />
-      <Commonness commonness="0.20" leveltype="ridgebasic" />
-      <Commonness commonness="0.30" leveltype="plateaubasic" />
-      <Commonness commonness="0.30" leveltype="greatseabasic" />
-      <Commonness commonness="0.10" leveltype="wastesbasic" />
+      <Commonness commonness="0.40" />
+      <Commonness commonness="0.10" leveltype="ridgebasic" />
+      <Commonness commonness="0.20" leveltype="plateaubasic" />
+      <Commonness commonness="0.10" leveltype="greatseabasic" />
+      <Commonness commonness="0.30" leveltype="wastesbasic" />
       <RequiredItem items="cuttingequipment" type="Equipped" />
     </LevelResource>
     <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="10.0" attachable="true" reattachable="false">
@@ -67,7 +67,7 @@
     <DecorativeSprite texture="Mods/Europa Arknights/Items/Materials/Materials.png" depth="0.4" sourcerect="135,135,126,105" offset="0,-40" randomrotation="-10,10" origin="0.5,0.5" scale="1.5" />
     <Body width="45" height="30" density="50" />
     <LevelResource deattachduration="4" randomoffsetfromwall="40">
-      <Commonness commonness="0.50" />
+      <Commonness commonness="0.70" />
       <Commonness commonness="0.60" leveltype="ridgebasic" />
       <Commonness commonness="0.60" leveltype="plateaubasic" />
       <Commonness commonness="0.60" leveltype="greatseabasic" />
@@ -89,7 +89,7 @@
     <DecorativeSprite texture="Mods/Europa Arknights/Items/Materials/Materials.png" depth="0.4" sourcerect="270,140,130,100" offset="0,-40" randomrotation="-10,10" origin="0.5,0.5" scale="1.5" />
     <Body width="45" height="30" density="50" />
     <LevelResource deattachduration="4" randomoffsetfromwall="40">
-      <Commonness commonness="0.50" />
+      <Commonness commonness="0.70" />
       <Commonness commonness="0.60" leveltype="ridgebasic" />
       <Commonness commonness="0.60" leveltype="plateaubasic" />
       <Commonness commonness="0.60" leveltype="greatseabasic" />
@@ -151,7 +151,6 @@
       <Price locationtype="research" multiplier="0.8" sold="false" />
     </Price>
     <Fabricate suitablefabricators="fabricator" requiredtime="10">
-      <RequiredSkill identifier="mechanical" level="25" />
       <RequiredItem identifier="EA_KetoneAgglutination" />
       <RequiredItem identifier="EA_OriginiumRock" />
     </Fabricate>
@@ -178,8 +177,16 @@
       <Price locationtype="city" multiplier="1" sold="false" />
       <Price locationtype="research" multiplier="0.8" sold="false" />
     </Price>
+    <LevelResource deattachduration="4" randomoffsetfromwall="40">
+      <Commonness commonness="0.70" />
+      <Commonness commonness="0.40" leveltype="ridgebasic" />
+      <Commonness commonness="0.40" leveltype="plateaubasic" />
+      <Commonness commonness="0.40" leveltype="greatseabasic" />
+      <Commonness commonness="0.40" leveltype="wastesbasic" />
+      <RequiredItem items="cuttingequipment" type="Equipped" />
+    </LevelResource>
     <InventoryIcon texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="668,1,120,130" origin="0.5,0.5" />
-    <Sprite texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="668,1,120,130" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="668,135,120,130" depth="0.55" origin="0.5,0.5" />
     <Body width="45" height="30" density="50" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
       <!-- Remove the item when fully used -->
@@ -196,7 +203,6 @@
       <Price locationtype="research" multiplier="0.9" sold="true" minavailable="60" />
     </Price>
     <Fabricate suitablefabricators="fabricator" requiredtime="5">
-      <RequiredSkill identifier="mechanical" level="20" />
       <RequiredItem identifier="EA_OriginiumInfectsBloodsample" />
       <RequiredItem identifier="EA_OriginiumInfectsBloodsample" />
       <RequiredItem identifier="EA_OriginiumInfectsBloodsample" />
@@ -261,7 +267,7 @@
       <Price locationtype="military" multiplier="1.5" sold="false" />
       <Price locationtype="mine" multiplier="1" sold="true" minavailable="180" />
     </Price>
-    <Fabricate suitablefabricators="fabricator" requiredtime="60">
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
       <RequiredSkill identifier="mechanical" level="40" />
       <RequiredItem identifier="EA_DissimilarIron" />
       <RequiredItem identifier="EA_KetoneAgglutination" />
@@ -288,17 +294,16 @@
       <Price locationtype="mine" multiplier="0.8" sold="true" minavailable="20" />
     </Price>
     <Fabricate suitablefabricators="fabricator" requiredtime="15">
-      <RequiredSkill identifier="mechanical" level="25" />
+      <RequiredItem identifier="carbon" />
+      <RequiredItem identifier="carbon" />
+      <RequiredItem identifier="carbon" />
+      <RequiredItem identifier="carbon" />
       <RequiredItem identifier="carbon" />
       <RequiredItem identifier="carbon" />
       <RequiredItem identifier="carbon" />
       <RequiredItem identifier="carbon" />
     </Fabricate>
     <Deconstruct time="15">
-      <Item identifier="carbon" copycondition="true" />
-      <Item identifier="carbon" copycondition="true" />
-      <Item identifier="carbon" copycondition="true" />
-      <Item identifier="carbon" copycondition="true" />
       <Item identifier="carbon" copycondition="true" />
       <Item identifier="carbon" copycondition="true" />
       <Item identifier="carbon" copycondition="true" />
@@ -322,8 +327,8 @@
       <Price locationtype="city" multiplier="1" sold="false" />
       <Price locationtype="research" multiplier="0.8" sold="false" />
     </Price>
-    <Fabricate suitablefabricators="fabricator" requiredtime="15">
-      <RequiredSkill identifier="mechanical" level="50" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="mechanical" level="30" />
       <RequiredItem identifier="EA_LightManganeseOre" />
       <RequiredItem identifier="EA_LightManganeseOre" />
       <RequiredItem identifier="EA_DissimilarIron" />
@@ -353,8 +358,8 @@
       <Price locationtype="city" multiplier="1" sold="false" />
       <Price locationtype="research" multiplier="0.8" sold="false" />
     </Price>
-    <Fabricate suitablefabricators="fabricator" requiredtime="15">
-      <RequiredSkill identifier="mechanical" level="50" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="mechanical" level="30" />
       <RequiredItem identifier="EA_Polyester" />
       <RequiredItem identifier="EA_Polyester" />
       <RequiredItem identifier="EA_KetoneAgglutination" />
@@ -382,8 +387,8 @@
       <Price locationtype="city" multiplier="1" sold="false" />
       <Price locationtype="research" multiplier="0.8" sold="false" />
     </Price>
-    <Fabricate suitablefabricators="fabricator" requiredtime="15">
-      <RequiredSkill identifier="mechanical" level="50" />
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="mechanical" level="30" />
       <RequiredItem identifier="EA_Polyester" />
       <RequiredItem identifier="EA_Polyester" />
       <RequiredItem identifier="EA_PolymerGel" />

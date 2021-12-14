@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Europa Arknights" path="Mods/Europa Arknights/filelist.xml" corepackage="false" gameversion="0.15.13.0" steamworkshopid="2673730671" installtime="1639398563">
+<contentpackage name="Europa Arknights" path="Mods/Europa Arknights/filelist.xml" corepackage="false" gameversion="0.15.13.0" steamworkshopid="2673730671" installtime="1639451888">
   <Character file="Mods/Europa Arknights/Characters/Infected_001/Infected_001.xml" />
   <Character file="Mods/Europa Arknights/Characters/infected_002/Infected_002.xml" />
   <Character file="Mods/Europa Arknights/Characters/infected_003/Infected_003.xml" />
@@ -19,12 +19,6 @@
   <Afflictions file="Mods/Europa Arknights/Talent/AbyssalHunter/HunterAfflictions.xml" />
   <Missions file="Mods/Europa Arknights/Missions/Missions.xml" />
   <Factions file="Mods/Europa Arknights/Factions.xml" />
-<!--
-  <Jobs file="Mods/Europa Arknights/Jobs.xml" />
-  <TalentTrees file="Mods/Europa Arknights/Talent/TalentTrees.xml" />
-  <Talents file="Mods/Europa Arknights/Talent/OripathyScholar/TalentsScholar.xml" />
-  <Talents file="Mods/Europa Arknights/Talent/AbyssalHunter/TalentsHunter.xml" />
--->
   <LocationTypes file="Mods/Europa Arknights/UI/locationTypes.xml" />
   <LevelGenerationParameters file="Mods/Europa Arknights/Map/Biomes/Biomes.xml" />
   <LevelGenerationParameters file="Mods/Europa Arknights/Map/Biomes/NaturalDisasterArea/NaturalDisasterArea.xml" />
@@ -109,4 +103,8 @@
   <None file="Mods/Europa Arknights/Characters/infected_007/Animations/Infected_007Walk.xml" />
   <None file="Mods/Europa Arknights/Characters/infected_007/Ragdolls/Infected_007DefaultRagdoll.xml" />
   <None file="Mods/Europa Arknights/Items/Campaign/campaign.png" />
+  <None file="Mods/Europa Arknights/Talent/TalentTrees.xml" />
+  <None file="Mods/Europa Arknights/Items/Equipments/Ashlock.png" />
+  <None file="Mods/Europa Arknights/Talent/AbyssalHunter/TalentsHunter.xml" />
+  <None file="Mods/Europa Arknights/Talent/OripathyScholar/TalentsScholar.xml" />
 </contentpackage>
