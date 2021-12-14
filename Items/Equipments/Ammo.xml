@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Items>
+<!-- 弹匣 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <Item name="源石蚀刻弹匣" identifier="EA_OriginiumMagazine" scale="0.25" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,EA_OriginiumMagazine" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="EA_OriginiumAR" minamount="1" maxamount="1" spawnprobability="1"/>
 
@@ -11,7 +12,7 @@
       <Price locationtype="mine" multiplier="1.25" sold="false"/>
     </Price>
 
-    <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true" amount="2">
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="magnesium" />
       <RequiredItem identifier="EA_Originiums" />
@@ -36,39 +37,6 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
   </Item>
 
-  <Item name="源石蚀刻子弹" identifier="EA_OriginiumBullet" category="Equipment" spritecolor="255,210,125,255" inventoryiconcolor="255,210,125,255" interactthroughwalls="true" tags="smallitem, round, EA_OriginiumBullet" impactsoundtag="impact_metal_light" scale="0.32" hideinmenus="true">
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="704,384,64,64" origin="0.5,0.5" />
-    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="238,6,29,11" depth="0.55" origin="0.5,0.5" />
-    <Body width="29" height="10" density="40" />
-
-    <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
-    <Projectile characterusable="false" hitscan="true" removeonhit="true">
-      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6"/>
-      <Attack structuredamage="2.5" itemdamage="36" stun="0.08" targetforce="6" penetration="0.5">
-        <Affliction identifier="bleeding" strength="17.5" />
-        <Affliction identifier="gunshotwound" strength="15" />
-      </Attack>
-      <StatusEffect type="OnImpact" target="UseTarget">
-        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
-      </StatusEffect>
-
-      <StatusEffect type="OnImpact" target="UseTarget">
-        <Conditional entitytype="eq Structure"/>
-        <Conditional hastag="eq door"/>
-        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
-      </StatusEffect>
-
-      <StatusEffect type="OnUse">
-        <Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
-      </StatusEffect>
-	  
-      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="5">
-        <Remove />
-      </StatusEffect>
-	  
-    </Projectile>
-  </Item>
-
   <Item name="液态源石罐" identifier="EA_LiquidOriginiumTank" scale="0.45" category="Equipment" cargocontaineridentifier="EA_LiquidOriginiumTank" tags="smallitem,magazine,EA_LiquidOriginiumTank" impactsoundtag="impact_metal_light" maxstacksize="2">
     <!--<Price locationtype="Research" buyprice="240" />-->
     <PreferredContainer primary="ek_ammotag_alienmag"/>
@@ -81,7 +49,7 @@
       <Price locationtype="military" multiplier="1" sold="false"/>
     </Price>
 
-    <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true">
+    <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true" amount="2">
       <RequiredSkill identifier="weapons" level="40" />
       <RequiredItem identifier="magnesium" />
       <RequiredItem identifier="EA_Originiums" />
@@ -111,6 +79,122 @@
         <Remove />
       </StatusEffect>-->
     </ItemContainer>
+  </Item>
+
+  <Item name="源石蚀刻霰弹" identifier="EA_ShotgunBullet" category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,EA_ShotgunBullet,shotgunammo" Scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="shotgun" minamount="6" maxamount="6" spawnprobability="1"/>
+    <PreferredContainer primary="shotgununique" minamount="2" maxamount="2" spawnprobability="1"/>
+    <PreferredContainer primary="secarmcab" minamount="0" maxamount="10" spawnprobability="0.25"/>
+    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="3" spawnprobability="0.2"/>
+    <PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="4" spawnprobability="0.33"/>
+    <Price baseprice="40" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false"/>
+      <Price locationtype="city" multiplier="1.25" minavailable="4" />
+      <Price locationtype="research" multiplier="1.25" sold="false"/>
+      <Price locationtype="military" multiplier="0.9" minavailable="12" />
+      <Price locationtype="mine" multiplier="1.25" sold="false"/>
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true" amount="8">
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredItem identifier="magnesium" />
+      <RequiredItem identifier="EA_Originiums" />
+      <RequiredItem identifier="lead" />
+      <RequiredItem identifier="plastic" />
+      <RequiredItem identifier="plastic" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="832,960,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="189,299,23,11" depth="0.55" origin="0.5,0.5" />
+    <Body width="23" height="10" density="40" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
+
+    <Projectile characterusable="false" hitscan="true" hitscancount="4" removeonhit="true" spread="15">
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,100" scalemultiplier="1,0.5"/>
+      <Attack structuredamage="0.5" targetforce="4" itemdamage="15" severlimbsprobability="0.2">
+        <Affliction identifier="bleeding" strength="12" />
+        <Affliction identifier="gunshotwound" strength="18" />
+        <Affliction identifier="stun" strength="0.3" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure"/>
+        <Conditional hastag="eq door"/>
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+
+  <Item name="源石箭" identifier="EA_OriginiumArrow" category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="mediumitem,harpoonammo,EA_OriginiumArrow" Scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="harpoongun" minamount="5" maxamount="5" spawnprobability="1"/>
+    <PreferredContainer primary="armcab" minamount="0" maxamount="5" spawnprobability="0.25"/>
+    <PreferredContainer secondary="wreckarmcab" minamount="0" maxamount="3" spawnprobability="0.25"/>
+    <PreferredContainer secondary="abandonedarmcab" minamount="0" maxamount="3" spawnprobability="0.1"/>
+    <Price baseprice="30" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false"/>
+      <Price locationtype="city" multiplier="1.25" minavailable="6" />
+      <Price locationtype="research" multiplier="1.25" sold="false"/>
+      <Price locationtype="military" multiplier="0.9" minavailable="12" />
+      <Price locationtype="mine" multiplier="1.25" sold="false"/>
+    </Price>
+    <Deconstruct time="5">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="weapons" level="20" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="320,968,55,55" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="85,368,168,11" depth="0.55" origin="0.5,0.5" />
+    <Body width="160" height="10" density="20" />
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+
+    <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="true" sticktoitems="false" sticktostructures="false" stickpermanently="true">
+      <Attack structuredamage="10" itemdamage="40" targetforce="5" severlimbsprobability="0.1">
+        <Affliction identifier="bleeding" strength="30" />
+        <Affliction identifier="lacerations" strength="50" />
+        <Affliction identifier="stun" strength="0.3" />
+      </Attack>
+      <StatusEffect type="OnActive" target="UseTarget,This" checkconditionalalways="true" comparison="And">
+        <Conditional Snapped="false" />
+        <Conditional mass="lt 30"/>
+        <Affliction identifier="drag" strength="1"/>
+      </StatusEffect>
+    </Projectile>
+  </Item>
+
+<!-- 子弹 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+  <Item name="源石蚀刻子弹" identifier="EA_OriginiumBullet" category="Equipment" spritecolor="255,210,125,255" inventoryiconcolor="255,210,125,255" interactthroughwalls="true" tags="smallitem, round, EA_OriginiumBullet" impactsoundtag="impact_metal_light" scale="0.32" hideinmenus="true">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="704,384,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="238,6,29,11" depth="0.55" origin="0.5,0.5" />
+    <Body width="29" height="10" density="40" />
+
+    <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
+    <Projectile characterusable="false" hitscan="true" removeonhit="true">
+      <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6"/>
+      <Attack structuredamage="2.5" itemdamage="36" stun="0.08" targetforce="6" penetration="0.5">
+        <Affliction identifier="bleeding" strength="17.5" />
+        <Affliction identifier="gunshotwound" strength="15" />
+      </Attack>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+      </StatusEffect>
+
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure"/>
+        <Conditional hastag="eq door"/>
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+
+      <StatusEffect type="OnUse">
+        <Explosion range="125.0" force="0.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
+      </StatusEffect>
+	  
+      <StatusEffect type="OnNotContained" target="This" stackable="false" delay="5">
+        <Remove />
+      </StatusEffect>  
+    </Projectile>
   </Item>
 
   <Item name="液态源石" identifier="EA_LiquidOriginium" category="Misc" spritecolor="75,215,250,225" inventoryiconcolor="75,215,250,225" interactthroughwalls="true" tags="smallitem, round, EA_LiquidOriginium" impactsoundtag="impact_metal_light" hideinmenus="true">

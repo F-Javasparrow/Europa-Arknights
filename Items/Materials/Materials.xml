@@ -1,14 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
   <Item name="至纯源石" identifier="EA_Originiums" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light">
-
-    <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
-    <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.01"/>
-
+    <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1" />
+    <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.01" />
     <Price baseprice="1000" soldeverywhere="false">
-      <Price locationtype="mine" multiplier="1" sold="false"/>
+      <Price locationtype="mine" multiplier="1" sold="false" />
     </Price>
-
     <Fabricate suitablefabricators="fabricator" requiredtime="20">
       <RequiredSkill identifier="mechanical" level="20" />
       <RequiredItem identifier="EA_OriginiumsOre" />
@@ -16,29 +13,28 @@
       <RequiredItem identifier="EA_OriginiumsOre" />
       <RequiredItem identifier="EA_OriginiumsOre" />
     </Fabricate>
-
-    <InventoryIcon texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="0,0,125,125" />
+    <InventoryIcon texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="0,0,125,125" origin="0.5,0.5" />
     <Sprite texture="Materials.png" sourcerect="0,0,125,125" depth="0.55" origin="0.5,0.5" />
     <Body width="45" height="30" density="50" />
-
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
       <!-- Remove the item when fully used -->
       <StatusEffect type="OnBroken" target="This">
         <Remove />
       </StatusEffect>
+      <StatusEffect type="OnContained" target="Character,This">
+        <Conditional hastag="neq artifactcontainer" targetcontainer="true" />
+        <Affliction identifier="Oripathy" strength="0.1" />
+      </StatusEffect>
     </Holdable>
-    <LightComponent range="150.0" lightcolor="255,144,56,111" IsOn="true" castshadows="false" allowingameediting="false" pulseamount="0.9" pulsefrequency="0.25"/>
+    <LightComponent range="150.0" lightcolor="255,144,56,111" IsOn="true" castshadows="false" allowingameediting="false" pulseamount="0.9" pulsefrequency="0.25" />
   </Item>
-
-  <Item name="源石矿簇" identifier="EA_OriginiumsOre" category="Material" maxstacksize="8" Tags="smallitem,ore" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light">
-    <InventoryIcon texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="10,140,100,110" />
-    <Sprite texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="10,140,100,110" depth="0.55" origin="0.5,0.5" />
-    <DecorativeSprite texture="Mods/Europa Arknights/Items/Materials/Materials.png" depth="0.4" sourcerect="10,140,100,110" offset="0,-40" randomrotation="-20,20" origin="0.5,0.5" scale="1"/>
+  <Item name="源石矿簇" identifier="EA_OriginiumsOre" category="Material" maxstacksize="8" Tags="smallitem,ore" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.50" impactsoundtag="impact_metal_light">
+    <InventoryIcon texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="10,140,118,101" origin="0.5,0.5" />
+    <Sprite texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="10,140,118,100" depth="0.55" origin="0.5,0.5" />
+    <DecorativeSprite texture="Mods/Europa Arknights/Items/Materials/Materials.png" depth="0.4" sourcerect="10,140,118,100" offset="0,-40" randomrotation="-20,20" origin="0.5,0.5" scale="1" />
     <Body width="75" height="75" density="50" />
-
     <PreferredContainer secondary="locker" />
     <PreferredContainer primary="mineralcontainer" spawnprobability="0.1" />
-
     <LevelResource deattachduration="8" randomoffsetfromwall="40">
       <Commonness commonness="0.30" />
       <Commonness commonness="0.20" leveltype="ridgebasic" />
@@ -47,36 +43,29 @@
       <Commonness commonness="0.10" leveltype="wastesbasic" />
       <RequiredItem items="cuttingequipment" type="Equipped" />
     </LevelResource>
-
-    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="10.0" attachable="true" reattachable="false" >
+    <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="10.0" attachable="true" reattachable="false">
       <StatusEffect type="Always" target="This">
-        <Conditional hastag="neq artifactcontainer" targetcontainer="true"/>
+        <Conditional hastag="neq artifactcontainer" targetcontainer="true" />
       </StatusEffect>
-
       <StatusEffect type="OnContained" target="Character,This">
-        <Conditional hastag="neq artifactcontainer" targetcontainer="true"/>
-        <Affliction identifier="Oripathy" strength="0.1" />
+        <Conditional hastag="neq artifactcontainer" targetcontainer="true" />
+        <Affliction identifier="Oripathy" strength="0.02" />
       </StatusEffect>
     </Holdable>
-    <LightComponent range="150.0" lightcolor="255,144,56,111" IsOn="true" castshadows="false" allowingameediting="false" pulseamount="0.9" pulsefrequency="0.25"/>
+    <LightComponent range="150.0" lightcolor="255,144,56,111" IsOn="true" castshadows="false" allowingameediting="false" pulseamount="0.9" pulsefrequency="0.25" />
   </Item>
-
-  <Item name="固源岩" identifier="EA_OriginiumRock" category="Material" maxstacksize="8" Tags="smallitem,ore" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
-
+  <Item name="固源岩" identifier="EA_OriginiumRock" category="Material" maxstacksize="8" Tags="smallitem,ore" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light">
     <PreferredContainer secondary="locker" />
     <PreferredContainer primary="mineralcontainer" spawnprobability="0.1" />
-
     <Price baseprice="20" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1.3" sold="false"/>
-      <Price locationtype="city" multiplier="1" sold="false"/>
-      <Price locationtype="mine" multiplier="0.8" sold="true"  minavailable="20"/>
+      <Price locationtype="outpost" multiplier="1.3" sold="false" />
+      <Price locationtype="city" multiplier="1" sold="false" />
+      <Price locationtype="mine" multiplier="0.8" sold="true" minavailable="20" />
     </Price>
-
-    <InventoryIcon texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="125,0,125,125" />
-    <Sprite texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="135,135,125,125" depth="0.55" origin="0.5,0.5" />
-    <DecorativeSprite texture="Mods/Europa Arknights/Items/Materials/Materials.png" depth="0.4" sourcerect="135,135,125,125" offset="0,-40" randomrotation="-10,10" origin="0.5,0.5" scale="1.5"/>
+    <InventoryIcon texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="125,0,125,125" origin="0.5,0.5" />
+    <Sprite texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="135,135,126,105" depth="0.55" origin="0.5,0.5" />
+    <DecorativeSprite texture="Mods/Europa Arknights/Items/Materials/Materials.png" depth="0.4" sourcerect="135,135,126,105" offset="0,-40" randomrotation="-10,10" origin="0.5,0.5" scale="1.5" />
     <Body width="45" height="30" density="50" />
-
     <LevelResource deattachduration="4" randomoffsetfromwall="40">
       <Commonness commonness="0.50" />
       <Commonness commonness="0.60" leveltype="ridgebasic" />
@@ -87,24 +76,18 @@
     </LevelResource>
     <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="5.0" attachable="true" reattachable="false" />
   </Item>
-
-  <Item name="异铁" identifier="EA_DissimilarIron" category="Material" maxstacksize="8" Tags="smallitem,ore" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
-
+  <Item name="异铁" identifier="EA_DissimilarIron" category="Material" maxstacksize="8" Tags="smallitem,ore" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light">
     <PreferredContainer secondary="locker" />
     <PreferredContainer primary="mineralcontainer" spawnprobability="0.1" />
-
     <Price baseprice="20" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1.3" sold="false"/>
-      <Price locationtype="military" multiplier="1.5" sold="false"/>
-      <Price locationtype="mine" multiplier="0.8" sold="true"  minavailable="20"/>
+      <Price locationtype="outpost" multiplier="1.3" sold="false" />
+      <Price locationtype="military" multiplier="1.5" sold="false" />
+      <Price locationtype="mine" multiplier="0.8" sold="true" minavailable="20" />
     </Price>
-
-    <InventoryIcon texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="260,0,125,125" />
+    <InventoryIcon texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="260,0,125,125" origin="0.5,0.5" />
     <Sprite texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="270,140,130,100" depth="0.55" origin="0.5,0.5" />
-    <DecorativeSprite texture="Mods/Europa Arknights/Items/Materials/Materials.png" depth="0.4" sourcerect="270,140,130,100" offset="0,-40" randomrotation="-10,10" origin="0.5,0.5" scale="1.5"/>
-
+    <DecorativeSprite texture="Mods/Europa Arknights/Items/Materials/Materials.png" depth="0.4" sourcerect="270,140,130,100" offset="0,-40" randomrotation="-10,10" origin="0.5,0.5" scale="1.5" />
     <Body width="45" height="30" density="50" />
-
     <LevelResource deattachduration="4" randomoffsetfromwall="40">
       <Commonness commonness="0.50" />
       <Commonness commonness="0.60" leveltype="ridgebasic" />
@@ -115,21 +98,17 @@
     </LevelResource>
     <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="5.0" attachable="true" reattachable="false" />
   </Item>
-
-  <Item name="酮凝集" identifier="EA_KetoneAgglutination" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
-    <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="3" spawnprobability="0.06"/>
-
+  <Item name="酮凝集" identifier="EA_KetoneAgglutination" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1" />
+    <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="3" spawnprobability="0.06" />
     <Price baseprice="30" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1.5" sold="false"/>
-      <Price locationtype="city" multiplier="1" sold="false"/>
-      <Price locationtype="research" multiplier="0.8" sold="false"/>
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1" sold="false" />
+      <Price locationtype="research" multiplier="0.8" sold="false" />
     </Price>
-
-    <InventoryIcon texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="400,0,120,130" />
-    <Sprite texture="Materials.png" sourcerect="400,135,120,125" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="400,0,120,130" origin="0.5,0.5" />
+    <Sprite texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="400,0,120,130" depth="0.55" origin="0.5,0.5" />
     <Body width="45" height="30" density="50" />
-
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
       <!-- Remove the item when fully used -->
       <StatusEffect type="OnBroken" target="This">
@@ -137,31 +116,25 @@
       </StatusEffect>
     </Holdable>
   </Item>
-
-  <Item name="富酮植物" identifier="EA_KetonePlant" category="Material" maxstacksize="8" Tags="smallitem,plant" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
-
+  <Item name="富酮植物" identifier="EA_KetonePlant" category="Material" maxstacksize="8" Tags="smallitem,plant" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_soft">
     <Price baseprice="100" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1.3" sold="false"/>
-      <Price locationtype="city" multiplier="1.25" sold="true" minavailable="1"/>
-      <Price locationtype="research" multiplier="0.9" sold="true" minavailable="3"/>
-      <Price locationtype="military" multiplier="1" sold="false"/>
-      <Price locationtype="mine" multiplier="0.9" sold="false"/>
+      <Price locationtype="outpost" multiplier="1.3" sold="false" />
+      <Price locationtype="city" multiplier="1.25" sold="true" minavailable="1" />
+      <Price locationtype="research" multiplier="0.9" sold="true" minavailable="3" />
+      <Price locationtype="military" multiplier="1" sold="false" />
+      <Price locationtype="mine" multiplier="0.9" sold="false" />
     </Price>
-
     <Deconstruct time="10">
       <Item identifier="EA_KetoneAgglutination" />
       <Item identifier="EA_KetoneAgglutination" />
       <Item identifier="organicfiber" />
     </Deconstruct>
-
     <InventoryIcon texture="Mods/Europa Arknights/Items/Materials/Materials2.png" sourcerect="215,0,180,170" />
-    <Sprite texture="Materials2.png" sourcerect="215,0,180,170" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="Mods/Europa Arknights/Items/Materials/Materials2.png" sourcerect="215,0,180,170" depth="0.55" origin="0.5,0.5" />
     <Body width="45" height="30" density="50" />
-
     <LevelResource deattachduration="1" randomoffsetfromwall="40">
       <Commonness commonness="0.6" />
     </LevelResource>
-
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
       <!-- Remove the item when fully used -->
       <StatusEffect type="OnBroken" target="This">
@@ -169,15 +142,59 @@
       </StatusEffect>
     </Holdable>
   </Item>
-
-  <Item name="源石感染血液" identifier="EA_OriginiumInfectsBlood" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
-
-    <Price baseprice="65" soldeverywhere="false">
-      <Price locationtype="city" multiplier="1.3" sold="false"/>
-      <Price locationtype="research" multiplier="0.9" sold="true"  minavailable="60"/>
+  <Item name="聚酸酯" identifier="EA_Polyester" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1" />
+    <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="3" spawnprobability="0.06" />
+    <Price baseprice="30" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1" sold="false" />
+      <Price locationtype="research" multiplier="0.8" sold="false" />
     </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="mechanical" level="25" />
+      <RequiredItem identifier="EA_KetoneAgglutination" />
+      <RequiredItem identifier="EA_OriginiumRock" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="EA_KetoneAgglutination" copycondition="true" />
+      <Item identifier="EA_OriginiumRock" copycondition="true" />
+    </Deconstruct>
 
+    <InventoryIcon texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="530,2,120,130" origin="0.5,0.5" />
+    <Sprite texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="530,1,120,130" depth="0.55" origin="0.5,0.5" />
+    <Body width="45" height="30" density="50" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="轻锰矿" identifier="EA_LightManganeseOre" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1" />
+    <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="3" spawnprobability="0.06" />
+    <Price baseprice="30" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1" sold="false" />
+      <Price locationtype="research" multiplier="0.8" sold="false" />
+    </Price>
+    <InventoryIcon texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="668,1,120,130" origin="0.5,0.5" />
+    <Sprite texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="668,1,120,130" depth="0.55" origin="0.5,0.5" />
+    <Body width="45" height="30" density="50" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+  <Item name="源石感染血液" identifier="EA_OriginiumInfectsBlood" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1" />
+    <Price baseprice="65" soldeverywhere="false">
+      <Price locationtype="city" multiplier="1.3" sold="false" />
+      <Price locationtype="research" multiplier="0.9" sold="true" minavailable="60" />
+    </Price>
     <Fabricate suitablefabricators="fabricator" requiredtime="5">
       <RequiredSkill identifier="mechanical" level="20" />
       <RequiredItem identifier="EA_OriginiumInfectsBloodsample" />
@@ -186,16 +203,14 @@
       <RequiredItem identifier="EA_OriginiumInfectsBloodsample" />
     </Fabricate>
     <Deconstruct time="5">
-      <Item identifier="EA_OriginiumInfectsBloodsample" copycondition="true"/>
-      <Item identifier="EA_OriginiumInfectsBloodsample" copycondition="true"/>
-      <Item identifier="EA_OriginiumInfectsBloodsample" copycondition="true"/>
-      <Item identifier="EA_OriginiumInfectsBloodsample" copycondition="true"/>
+      <Item identifier="EA_OriginiumInfectsBloodsample" copycondition="true" />
+      <Item identifier="EA_OriginiumInfectsBloodsample" copycondition="true" />
+      <Item identifier="EA_OriginiumInfectsBloodsample" copycondition="true" />
+      <Item identifier="EA_OriginiumInfectsBloodsample" copycondition="true" />
     </Deconstruct>
-
     <InventoryIcon texture="Mods/Europa Arknights/Items/Materials/Materials2.png" sourcerect="10,0,90,160" />
-    <Sprite texture="Materials2.png" sourcerect="10,0,90,160" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="Mods/Europa Arknights/Items/Materials/Materials2.png" sourcerect="10,0,90,160" depth="0.55" origin="0.5,0.5" />
     <Body width="45" height="30" density="50" />
-
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
       <!-- Remove the item when fully used -->
       <StatusEffect type="OnBroken" target="This">
@@ -203,20 +218,16 @@
       </StatusEffect>
     </Holdable>
   </Item>
-
   <Item name="源石感染血样" identifier="EA_OriginiumInfectsBloodsample" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
-    <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="3" spawnprobability="0.06"/>
-
+    <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1" />
+    <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="3" spawnprobability="0.06" />
     <Price baseprice="20" soldeverywhere="false">
-      <Price locationtype="city" multiplier="1.3" sold="false"/>
-      <Price locationtype="research" multiplier="0.9" sold="true"  minavailable="20"/>
+      <Price locationtype="city" multiplier="1.3" sold="false" />
+      <Price locationtype="research" multiplier="0.9" sold="true" minavailable="20" />
     </Price>
-
     <InventoryIcon texture="Mods/Europa Arknights/Items/Materials/Materials2.png" sourcerect="10,170,110,50" />
-    <Sprite texture="Materials2.png" sourcerect="10,170,110,50" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="Mods/Europa Arknights/Items/Materials/Materials2.png" sourcerect="10,170,110,50" depth="0.55" origin="0.5,0.5" />
     <Body width="45" height="30" density="50" />
-
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
       <!-- Remove the item when fully used -->
       <StatusEffect type="OnBroken" target="This">
@@ -224,25 +235,19 @@
       </StatusEffect>
     </Holdable>
   </Item>
-
   <Item name="源石虫组织样本" identifier="EA_InfectedTissueSample" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
-
+    <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1" />
     <Price baseprice="50" soldeverywhere="false">
-      <Price locationtype="city" multiplier="1.3" sold="false"/>
-      <Price locationtype="research" multiplier="0.9" sold="true"  minavailable="50"/>
+      <Price locationtype="city" multiplier="1.3" sold="false" />
+      <Price locationtype="research" multiplier="0.9" sold="true" minavailable="50" />
     </Price>
-
     <Deconstruct time="15">
-      <Item identifier="EA_OriginiumInfectsBloodsample" copycondition="true"/>
-      <Item identifier="EA_OriginiumRock" copycondition="true"/>
+      <Item identifier="EA_OriginiumInfectsBloodsample" copycondition="true" />
+      <Item identifier="EA_OriginiumRock" copycondition="true" />
     </Deconstruct>
-
-
     <InventoryIcon texture="Mods/Europa Arknights/Items/Materials/Materials2.png" sourcerect="120,20,90,100" />
-    <Sprite texture="Materials2.png" sourcerect="120,20,90,100" depth="0.55" origin="0.5,0.5" />
+    <Sprite texture="Mods/Europa Arknights/Items/Materials/Materials2.png" sourcerect="120,20,90,100" depth="0.55" origin="0.5,0.5" />
     <Body width="45" height="30" density="50" />
-
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
       <!-- Remove the item when fully used -->
       <StatusEffect type="OnBroken" target="This">
@@ -250,27 +255,21 @@
       </StatusEffect>
     </Holdable>
   </Item>
-  
   <!-- Compounds ************************************************************************************************ -->
-
   <Item name="D32钢" identifier="EA_D32" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light">
-
     <Price baseprice="200" soldeverywhere="false">
-      <Price locationtype="military" multiplier="1.5" sold="false"/>
-      <Price locationtype="mine" multiplier="1" sold="true"  minavailable="180"/>
+      <Price locationtype="military" multiplier="1.5" sold="false" />
+      <Price locationtype="mine" multiplier="1" sold="true" minavailable="180" />
     </Price>
-
     <Fabricate suitablefabricators="fabricator" requiredtime="60">
       <RequiredSkill identifier="mechanical" level="40" />
       <RequiredItem identifier="EA_DissimilarIron" />
       <RequiredItem identifier="EA_KetoneAgglutination" />
       <RequiredItem identifier="EA_SeminaturalSolvent" />
     </Fabricate>
-
-    <InventoryIcon texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="10,265,125,125" />
-    <Sprite texture="Materials.png" sourcerect="10,265,125,125" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="10,265,125,125" origin="0.5,0.5" />
+    <Sprite texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="10,265,125,125" depth="0.55" origin="0.5,0.5" />
     <Body width="45" height="30" density="50" />
-
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
       <!-- Remove the item when fully used -->
       <StatusEffect type="OnBroken" target="This">
@@ -278,19 +277,16 @@
       </StatusEffect>
     </Holdable>
   </Item>
-
   <Item name="碳素块" identifier="EA_CarbonBlock" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light">
-    <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1"/>
-    <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="3" spawnprobability="0.06"/>
-
+    <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1" />
+    <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="3" spawnprobability="0.06" />
     <Price baseprice="40" soldeverywhere="false">
-      <Price locationtype="outpost" multiplier="1.3" sold="false"/>
-      <Price locationtype="city" multiplier="1.25" sold="false"/>
-      <Price locationtype="research" multiplier="1.1" sold="false"/>
-      <Price locationtype="military" multiplier="1.1" sold="false"/>
-      <Price locationtype="mine" multiplier="0.8" sold="true"  minavailable="20"/>
+      <Price locationtype="outpost" multiplier="1.3" sold="false" />
+      <Price locationtype="city" multiplier="1.25" sold="false" />
+      <Price locationtype="research" multiplier="1.1" sold="false" />
+      <Price locationtype="military" multiplier="1.1" sold="false" />
+      <Price locationtype="mine" multiplier="0.8" sold="true" minavailable="20" />
     </Price>
-
     <Fabricate suitablefabricators="fabricator" requiredtime="15">
       <RequiredSkill identifier="mechanical" level="25" />
       <RequiredItem identifier="carbon" />
@@ -299,20 +295,18 @@
       <RequiredItem identifier="carbon" />
     </Fabricate>
     <Deconstruct time="15">
-      <Item identifier="carbon" copycondition="true"/>
-      <Item identifier="carbon" copycondition="true"/>
-      <Item identifier="carbon" copycondition="true"/>
-      <Item identifier="carbon" copycondition="true"/>
-      <Item identifier="carbon" copycondition="true"/>
-      <Item identifier="carbon" copycondition="true"/>
-      <Item identifier="carbon" copycondition="true"/>
-      <Item identifier="carbon" copycondition="true"/>
+      <Item identifier="carbon" copycondition="true" />
+      <Item identifier="carbon" copycondition="true" />
+      <Item identifier="carbon" copycondition="true" />
+      <Item identifier="carbon" copycondition="true" />
+      <Item identifier="carbon" copycondition="true" />
+      <Item identifier="carbon" copycondition="true" />
+      <Item identifier="carbon" copycondition="true" />
+      <Item identifier="carbon" copycondition="true" />
     </Deconstruct>
-
-    <InventoryIcon texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="140,265,125,125" />
-    <Sprite texture="Materials.png" sourcerect="140,265,125,125" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="140,265,125,125" origin="0.5,0.5" />
+    <Sprite texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="140,265,125,125" depth="0.55" origin="0.5,0.5" />
     <Body width="45" height="30" density="50" />
-
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
       <!-- Remove the item when fully used -->
       <StatusEffect type="OnBroken" target="This">
@@ -320,5 +314,93 @@
       </StatusEffect>
     </Holdable>
   </Item>
-
+  <Item name="炽合金" identifier="EA_IncandescentAlloy" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1" />
+    <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="3" spawnprobability="0.06" />
+    <Price baseprice="30" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1" sold="false" />
+      <Price locationtype="research" multiplier="0.8" sold="false" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="15">
+      <RequiredSkill identifier="mechanical" level="50" />
+      <RequiredItem identifier="EA_LightManganeseOre" />
+      <RequiredItem identifier="EA_LightManganeseOre" />
+      <RequiredItem identifier="EA_DissimilarIron" />
+      <RequiredItem identifier="EA_Polyester" />
+    </Fabricate>
+    <Deconstruct time="15">
+      <Item identifier="EA_LightManganeseOre" copycondition="true" />
+      <Item identifier="EA_LightManganeseOre" copycondition="true" />
+      <Item identifier="EA_DissimilarIron" copycondition="true" />
+      <Item identifier="EA_Polyester" copycondition="true" />
+    </Deconstruct>
+    <InventoryIcon texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="281,266,120,130" origin="0.5,0.5" />
+    <Sprite texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="281,266,120,130" depth="0.55" origin="0.5,0.5" />
+    <Body width="45" height="30" density="50" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="聚合凝胶" identifier="EA_PolymerGel" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1" />
+    <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="3" spawnprobability="0.06" />
+    <Price baseprice="30" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1" sold="false" />
+      <Price locationtype="research" multiplier="0.8" sold="false" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="15">
+      <RequiredSkill identifier="mechanical" level="50" />
+      <RequiredItem identifier="EA_Polyester" />
+      <RequiredItem identifier="EA_Polyester" />
+      <RequiredItem identifier="EA_KetoneAgglutination" />
+    </Fabricate>
+    <Deconstruct time="15">
+      <Item identifier="EA_Polyester" copycondition="true" />
+      <Item identifier="EA_Polyester" copycondition="true" />
+      <Item identifier="EA_KetoneAgglutination" copycondition="true" />
+    </Deconstruct>
+    <InventoryIcon texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="415,266,120,130" origin="0.5,0.5" />
+    <Sprite texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="415,266,120,130" depth="0.55" origin="0.5,0.5" />
+    <Body width="45" height="30" density="50" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="白马醇" identifier="EA_TorsionAlcohol" category="Material" maxstacksize="8" Tags="smallitem" canbepicked="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="storagecab" minamount="0" maxamount="2" spawnprobability="1" />
+    <PreferredContainer secondary="wreckstoragecab" minamount="0" maxamount="3" spawnprobability="0.06" />
+    <Price baseprice="30" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1" sold="false" />
+      <Price locationtype="research" multiplier="0.8" sold="false" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="15">
+      <RequiredSkill identifier="mechanical" level="50" />
+      <RequiredItem identifier="EA_Polyester" />
+      <RequiredItem identifier="EA_Polyester" />
+      <RequiredItem identifier="EA_PolymerGel" />
+    </Fabricate>
+    <Deconstruct time="15">
+      <Item identifier="EA_Polyester" copycondition="true" />
+      <Item identifier="EA_Polyester" copycondition="true" />
+      <Item identifier="EA_PolymerGel" copycondition="true" />
+    </Deconstruct>
+    <InventoryIcon texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="552,266,120,130" origin="0.5,0.5" />
+    <Sprite texture="Mods/Europa Arknights/Items/Materials/Materials.png" sourcerect="552,266,120,130" depth="0.55" origin="0.5,0.5" />
+    <Body width="45" height="30" density="50" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
 </Items>
